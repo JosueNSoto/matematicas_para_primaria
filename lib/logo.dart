@@ -6,9 +6,7 @@ class loogoApp extends StatelessWidget {
     // TODO: implement build
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        loogoApp("assets/img/signos1.jpg"),
-      ],
+      children: <Widget>[],
     );
   }
 }

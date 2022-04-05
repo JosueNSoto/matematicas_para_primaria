@@ -12,12 +12,12 @@ class logIn extends StatelessWidget {
     //Widgets
     //Widget para mostrar un mensaje
     final fraseLogIn = Container(
-      margin: EdgeInsets.only(top: 150.0, right: 10.0, left: 10.0),
+      //margin: EdgeInsets.only(top: 150.0, right: 10.0, left: 10.0),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           const Text(
-            "La duda es el mayor de tus enemigos",
+            "\"La duda es el mayor de tus enemigos\"",
             style:
                 TextStyle(color: Color.fromARGB(255, 0, 0, 0), fontSize: 17.0),
             textAlign: TextAlign.center,
@@ -25,9 +25,10 @@ class logIn extends StatelessWidget {
         ],
       ),
     );
+
     //Widget para mostrar "Iniciar Sesion y Bienvenidos"
     final fraseWelcome = Container(
-      padding: const EdgeInsets.only(top: 20.0, left: 15.0, right: 20),
+      //padding: const EdgeInsets.only(top: 20.0, left: 15.0, right: 20),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
@@ -47,6 +48,12 @@ class logIn extends StatelessWidget {
       ),
     );
 
-    return Column(children: <Widget>[fraseLogIn, fraseWelcome]);
+    final contenidoLogIn =
+        Column(crossAxisAlignment: CrossAxisAlignment.end, children: <Widget>[
+      fraseLogIn,
+      fraseWelcome,
+    ]);
+
+    return contenidoLogIn;
   }
 }
