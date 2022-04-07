@@ -48,10 +48,66 @@ class logIn extends StatelessWidget {
       ),
     );
 
+    //Widget para usuario y contraseña josjos
+    final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+    final nameAndPass = Column(
+      children: <Widget>[
+        Text(
+          "Usuario",
+          style: TextStyle(
+            color: Color.fromRGBO(254, 102, 37, 1),
+          ),
+        ),
+        TextFormField(
+          decoration: const InputDecoration(
+            hintText: "Ingresa tu nombre de usuario",
+          ),
+          validator: (String? value) {
+            if (value == null || value.isEmpty) {
+              return 'Please enter some text';
+            }
+            return null;
+          },
+        ),
+        //https://api.flutter.dev/flutter/widgets/Form-class.html
+        Text(
+          "Password",
+          style: TextStyle(
+            color: Color.fromRGBO(254, 102, 37, 1),
+          ),
+        ),
+        TextFormField(
+          decoration: const InputDecoration(
+            hintText: "Ingresa tu contraseña",
+          ),
+          validator: (String? value) {
+            if (value == null || value.isEmpty) {
+              return 'Please enter some text';
+            }
+            return null;
+          },
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 16.0),
+          child: ElevatedButton(
+            onPressed: () {
+              // Validate will return true if the form is valid, or false if
+              // the form is invalid.
+              if (_formKey.currentState!.validate()) {
+                // Process data.
+              }
+            },
+            child: const Text("Enviar"),
+          ),
+        ),
+      ],
+    );
+
     final contenidoLogIn =
         Column(crossAxisAlignment: CrossAxisAlignment.end, children: <Widget>[
       fraseLogIn,
       fraseWelcome,
+      nameAndPass,
     ]);
 
     return contenidoLogIn;
