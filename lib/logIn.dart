@@ -10,16 +10,25 @@ class logIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //Widgets
+
+    //Widget para la imagen
+    final llamadaLogo = Container(
+      margin: EdgeInsets.only(top: 20),
+      alignment: Alignment.center,
+    );
+
     //Widget para mostrar un mensaje
     final fraseLogIn = Container(
-      //margin: EdgeInsets.only(top: 150.0, right: 10.0, left: 10.0),
+      margin: EdgeInsets.only(top: 150),
+      alignment: Alignment.center,
       child: Column(
-        //mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           const Text(
             "\"La duda es el mayor de tus enemigos\"",
-            style:
-                TextStyle(color: Color.fromARGB(255, 0, 0, 0), fontSize: 17.0),
+            style: TextStyle(
+                color: Color.fromRGBO(54, 93, 137, 1),
+                fontSize: 15.0,
+                fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
         ],
@@ -35,13 +44,15 @@ class logIn extends StatelessWidget {
           const Text(
             "Inicia sesion",
             style: TextStyle(
-                color: Color.fromRGBO(254, 102, 37, 1), fontSize: 17.0),
+                color: Color.fromRGBO(254, 102, 37, 1),
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold),
             textAlign: TextAlign.left,
           ),
           const Text(
             "\n¡Bienvenidos de nuevo!",
             style: TextStyle(
-                color: Color.fromRGBO(201, 201, 201, 0.9), fontSize: 15.0),
+                color: Color.fromRGBO(33, 47, 61, 0.9), fontSize: 15.0),
             textAlign: TextAlign.left,
           ),
         ],
@@ -55,8 +66,9 @@ class logIn extends StatelessWidget {
         Text(
           "Usuario",
           style: TextStyle(
-            color: Color.fromRGBO(254, 102, 37, 1),
-          ),
+              color: Color.fromRGBO(254, 102, 37, 1),
+              fontSize: 15.0,
+              fontWeight: FontWeight.bold),
         ),
         TextFormField(
           decoration: const InputDecoration(
@@ -73,8 +85,9 @@ class logIn extends StatelessWidget {
         Text(
           "Password",
           style: TextStyle(
-            color: Color.fromRGBO(254, 102, 37, 1),
-          ),
+              color: Color.fromRGBO(254, 102, 37, 1),
+              fontSize: 15.0,
+              fontWeight: FontWeight.bold),
         ),
         TextFormField(
           decoration: const InputDecoration(
