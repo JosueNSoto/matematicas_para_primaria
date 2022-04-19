@@ -1,5 +1,5 @@
+import 'package:elgood_de_mate/mainMenu.dart';
 import 'package:flutter/material.dart';
-import 'logo.dart';
 
 class logIn extends StatefulWidget {
   @override
@@ -26,10 +26,11 @@ class _logInState extends State<logIn> {
     //Widget para la imagen
     final llamadaLogo = Row(
       children: <Widget>[
+        SizedBox(height: 175),
         Expanded(
           child: Image(
             image: AssetImage("assets/img/signos1.png"),
-            height: 100,
+            height: 150,
           ),
         ),
       ],
@@ -152,7 +153,10 @@ class _logInState extends State<logIn> {
                       primary: Colors.white,
                       textStyle: const TextStyle(fontSize: 20),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => mainMenu()));
+                    },
                     child: const Text(
                       'Ingresar',
                       style: TextStyle(fontSize: 14.0),
@@ -167,7 +171,7 @@ class _logInState extends State<logIn> {
     //Widget de ayuda al usuario
     final textAyuda2 = Column(
       children: <Widget>[
-        SizedBox(height: 75),
+        SizedBox(height: 55),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[

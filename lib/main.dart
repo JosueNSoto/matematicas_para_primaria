@@ -10,7 +10,6 @@ class MyApp extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Matematicas',
       theme: ThemeData(),
       home: Scaffold(
         body: logIn(),
