@@ -1,5 +1,7 @@
+import 'package:elgood_de_mate/mainMenu.dart';
 import 'package:flutter/material.dart';
 import 'logIn.dart';
+import 'signUp.dart';
 
 void main() {
   runApp(const MyApp());

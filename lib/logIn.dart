@@ -1,4 +1,5 @@
 import 'package:elgood_de_mate/mainMenu.dart';
+import 'signUp.dart';
 import 'package:flutter/material.dart';
 
 class logIn extends StatefulWidget {
