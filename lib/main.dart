@@ -14,7 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(),
       home: Scaffold(
-        body: logIn(),
+        body: Center(
+          child: logIn(),
+        ),
       ),
     );
   }

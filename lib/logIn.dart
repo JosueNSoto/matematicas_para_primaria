@@ -1,6 +1,9 @@
 import 'package:elgood_de_mate/mainMenu.dart';
 import 'signUp.dart';
 import 'package:flutter/material.dart';
+import 'test.dart'; //para hacer pruebas
+import 'alerts.dart';
+import 'logo.dart';
 
 class logIn extends StatefulWidget {
   @override
@@ -126,7 +129,7 @@ class _logInState extends State<logIn> {
                 hintStyle: TextStyle(fontSize: 12.0)),
             validator: (String? value) {
               if (value == null || value.isEmpty) {
-                return 'Ingresa ta contraseña';
+                return 'Ingresa tu contraseña';
               }
               return null;
             },
