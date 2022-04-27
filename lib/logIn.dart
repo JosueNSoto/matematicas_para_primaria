@@ -158,8 +158,10 @@ class _logInState extends State<logIn> {
                       textStyle: const TextStyle(fontSize: 20),
                     ),
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => mainMenu()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => contenidoMainMenu()));
                     },
                     child: const Text(
                       'Ingresar',
