@@ -221,8 +221,11 @@ class _logInState extends State<logIn> {
               style: TextButton.styleFrom(
                 textStyle: const TextStyle(fontSize: 12),
               ),
-              onPressed: () {},
-              child: const Text(
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => signUp()));
+              },
+              child: Text(
                 "\nContáctanos",
                 style: TextStyle(
                   color: Color.fromRGBO(151, 151, 151, 1),

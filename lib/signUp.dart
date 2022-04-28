@@ -12,56 +12,35 @@ class _signUpState extends State<signUp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(),
-      home: Scaffold(body: contenidoSignUp()),
-    );
-  }
-}
-
-class volver extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return TextButton(
-      style: TextButton.styleFrom(
-        textStyle: const TextStyle(fontSize: 12),
-      ),
-      onPressed: () {
-        Navigator.of(context).pop();
-      },
-      child: const Text(
-        "Cerrar Sesiòn",
-        style: TextStyle(
-          color: Color.fromRGBO(254, 102, 37, 1),
-          decoration: TextDecoration.underline,
+      home: Scaffold(
+        body: Container(
+          margin: EdgeInsets.only(top: 12),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextButton(
+                style: TextButton.styleFrom(
+                  textStyle: const TextStyle(fontSize: 12),
+                ),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                child: Text(
+                  "Volver",
+                  style: TextStyle(
+                    color: Color.fromRGBO(254, 102, 37, 1),
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
+              ),
+              Image(
+                image: AssetImage("assets/img/signos1.png"),
+                height: 100,
+              )
+            ],
+          ),
         ),
       ),
-    );
-  }
-}
-
-class imageLogo extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return Container(
-      child: Expanded(
-          child: Image(
-        image: AssetImage("assets/img/signos1.png"),
-        height: 1,
-      )),
-    );
-  }
-}
-
-class contenidoSignUp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return Column(
-      children: [
-        volver(),
-        imageLogo(),
-      ],
     );
   }
 }
