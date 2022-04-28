@@ -1,9 +1,12 @@
 import 'package:elgood_de_mate/mainMenu.dart';
+import 'package:sqflite/sqflite.dart';
 import 'signUp.dart';
 import 'package:flutter/material.dart';
 import 'test.dart'; //para hacer pruebas
 import 'alerts.dart';
 import 'logo.dart';
+import 'signUp.dart';
+import 'help.dart';
 
 class logIn extends StatefulWidget {
   @override
@@ -191,7 +194,10 @@ class _logInState extends State<logIn> {
               style: TextButton.styleFrom(
                 textStyle: const TextStyle(fontSize: 12),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => signUp()));
+              },
               child: const Text(
                 "\nRegistrate",
                 style: TextStyle(
