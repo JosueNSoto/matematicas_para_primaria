@@ -1,3 +1,4 @@
+import 'package:elgood_de_mate/helpers/logo.dart';
 import 'package:elgood_de_mate/logIn.dart';
 import 'package:elgood_de_mate/mainMenu.dart';
 import 'package:flutter/material.dart';

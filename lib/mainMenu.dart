@@ -3,7 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 //Widget principal para que trabaje esta cara
-class mainMenu extends StatelessWidget {
+class mainMenu extends logIn {
+  @override
+  State<mainMenu> createState() => _mainMenuState();
+}
+
+class _mainMenuState extends State<mainMenu> {
   @override
   Widget build(BuildContext context) {
     return Container(

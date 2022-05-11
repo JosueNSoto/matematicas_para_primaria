@@ -2,11 +2,11 @@ import 'package:elgood_de_mate/mainMenu.dart';
 import 'package:sqflite/sqflite.dart';
 import 'signUp.dart';
 import 'package:flutter/material.dart';
-import 'test.dart'; //para hacer pruebas
-import 'alerts.dart';
-import 'logo.dart';
+import 'test/test.dart';
+import 'helpers/alerts.dart';
+import 'helpers/logo.dart';
 import 'signUp.dart';
-import 'help.dart';
+import 'contactanos.dart';
 
 class logIn extends StatefulWidget {
   @override
@@ -68,7 +68,7 @@ class _logInState extends State<logIn> {
       margin: EdgeInsets.only(left: 35),
       child: Column(
         children: <Widget>[
-          const Text(
+          Text(
             "Inicia sesion",
             style: TextStyle(
               color: Color.fromRGBO(254, 102, 37, 1),
