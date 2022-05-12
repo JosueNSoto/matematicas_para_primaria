@@ -165,7 +165,8 @@ class _logInState extends State<logIn> {
                     },
                     child: const Text(
                       'Ingresar',
-                      style: TextStyle(fontSize: 14.0),
+                      style: TextStyle(
+                          fontSize: 14.0, fontWeight: FontWeight.bold),
                     ),
                   )
                 ],

@@ -1,14 +1,14 @@
-import 'package:elgood_de_mate/helpers/logo.dart';
 import 'package:elgood_de_mate/logIn.dart';
 import 'package:flutter/material.dart';
-import 'crearPass.dart';
+import "logIn.dart";
+import 'signUp.dart';
 
-class signUp extends StatefulWidget {
+class crearPass extends StatefulWidget {
   @override
-  State<signUp> createState() => _signUpState();
+  State<crearPass> createState() => _crearPassState();
 }
 
-class _signUpState extends State<signUp> {
+class _crearPassState extends State<crearPass> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -22,26 +22,29 @@ class _signUpState extends State<signUp> {
                 image: AssetImage("assets/img/signos1.png"),
                 height: 150,
               ),
-              SizedBox(height: 50),
+              SizedBox(height: 25),
               Text(
-                "Llena los campos solicitados",
+                "Crea tu contraseña",
                 style: TextStyle(
                   color: Color.fromRGBO(254, 102, 37, 1),
                   fontSize: 19.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 50),
+              SizedBox(height: 25),
               Text(
-                "Coloca tu nombre (s)",
+                "Tu usuario",
                 style: TextStyle(
-                    color: Color.fromRGBO(254, 102, 37, 1),
-                    fontSize: 12.0,
-                    fontWeight: FontWeight.bold),
+                  color: Color.fromRGBO(254, 102, 37, 1),
+                  fontSize: 12,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               TextFormField(
                 decoration: const InputDecoration(
-                    hintText: "Ximena", hintStyle: TextStyle(fontSize: 12.0)),
+                    //Debemos cambiar este hinText por una variable con el usu
+                    hintText: "mm.ximena367",
+                    hintStyle: TextStyle(fontSize: 12.0)),
                 validator: (String? value) {
                   if (value == null || value.isEmpty) {
                     return 'Ingresa tu nombre';
@@ -49,21 +52,76 @@ class _signUpState extends State<signUp> {
                   return null;
                 },
               ),
-              SizedBox(height: 25),
+              SizedBox(height: 20),
               Text(
-                "Coloca tus apellidos",
+                "En 3 palabras describe tu película favorita",
                 style: TextStyle(
-                    color: Color.fromRGBO(254, 102, 37, 1),
-                    fontSize: 12.0,
-                    fontWeight: FontWeight.bold),
+                  color: Color.fromRGBO(254, 102, 37, 1),
+                  fontSize: 12.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                "Usa mayúsculas y minúsculas",
+                style: TextStyle(
+                  color: Color.fromRGBO(201, 201, 201, 1),
+                  fontSize: 12.0,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               TextFormField(
                 decoration: const InputDecoration(
-                    hintText: "Morales Miller",
+                    //Debemos cambiar este hinText por una variable con el usu
+                    hintText: "Divertida",
                     hintStyle: TextStyle(fontSize: 12.0)),
                 validator: (String? value) {
                   if (value == null || value.isEmpty) {
-                    return 'Ingresa tus apellidos';
+                    return 'Ingresa una palabra';
+                  }
+                  return null;
+                },
+              ),
+              TextFormField(
+                decoration: const InputDecoration(
+                    //Debemos cambiar este hinText por una variable con el usu
+                    hintText: "Aburrida",
+                    hintStyle: TextStyle(fontSize: 12.0)),
+                validator: (String? value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Ingresa una palabra';
+                  }
+                  return null;
+                },
+              ),
+              TextFormField(
+                decoration: const InputDecoration(
+                    //Debemos cambiar este hinText por una variable con el usu
+                    hintText: "Comedia",
+                    hintStyle: TextStyle(fontSize: 12.0)),
+                validator: (String? value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Ingresa una palabra';
+                  }
+                  return null;
+                },
+              ),
+              SizedBox(height: 20),
+              Text(
+                "Escribe el nombrre de tu platillo favorito",
+                style: TextStyle(
+                  color: Color.fromRGBO(254, 102, 37, 1),
+                  fontSize: 12.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              TextFormField(
+                decoration: const InputDecoration(
+                    //Debemos cambiar este hinText por una variable con el usu
+                    hintText: "Comedia",
+                    hintStyle: TextStyle(fontSize: 12.0)),
+                validator: (String? value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Ingresa una palabra';
                   }
                   return null;
                 },
@@ -92,10 +150,8 @@ class _signUpState extends State<signUp> {
                           textStyle: const TextStyle(fontSize: 20),
                         ),
                         onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => crearPass()));
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => logIn()));
                         },
                         child: const Text(
                           'Generar Usuario',
