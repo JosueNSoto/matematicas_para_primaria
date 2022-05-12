@@ -15,9 +15,6 @@ class logIn extends StatefulWidget {
 
 class _logInState extends State<logIn> {
   //declaraciòn de variables
-  String fraseIniciaSesion = "Inicia sesiòn";
-
-  String fraseBienvenido = "¡Bienvenidos de nuevo!";
 
   bool passVisible = false;
   //Para el botón de ocultar contraseña
@@ -69,7 +66,7 @@ class _logInState extends State<logIn> {
       child: Column(
         children: <Widget>[
           Text(
-            "Inicia sesion",
+            "Inicia sesión",
             style: TextStyle(
               color: Color.fromRGBO(254, 102, 37, 1),
               fontSize: 20.0,
@@ -86,7 +83,7 @@ class _logInState extends State<logIn> {
       margin: EdgeInsets.only(left: 35),
       child: Column(
         children: <Widget>[
-          const Text(
+          Text(
             "\n¡Bienvenidos de nuevo!\n",
             style:
                 TextStyle(color: Color.fromRGBO(33, 47, 61, 1), fontSize: 14.0),

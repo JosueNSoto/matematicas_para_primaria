@@ -13,7 +13,7 @@ class _mainMenuState extends State<mainMenu> {
   Widget build(BuildContext context) {
     return Container(
       child: Row(
-        children: [
+        children: <Widget>[
           TextButton(
             style: TextButton.styleFrom(
               textStyle: const TextStyle(fontSize: 12),
