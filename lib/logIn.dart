@@ -4,7 +4,7 @@ import 'signUp.dart';
 import 'package:flutter/material.dart';
 import 'test/test.dart';
 import 'helpers/alerts.dart';
-import 'helpers/logo.dart';
+import 'helpers/margenes.dart';
 import 'signUp.dart';
 import 'contactanos.dart';
 
@@ -15,6 +15,7 @@ class logIn extends StatefulWidget {
 
 class _logInState extends State<logIn> {
   //declaraciòn de variables
+  var aLogIn;
 
   bool passVisible = false;
   //Para el botón de ocultar contraseña
@@ -27,17 +28,9 @@ class _logInState extends State<logIn> {
   Widget build(BuildContext context) {
     //Widgets
 
-    //Widget para la imagen
-    final llamadaLogo = Row(
-      children: <Widget>[
-        SizedBox(height: 175),
-        Expanded(
-          child: Image(
-            image: AssetImage("assets/img/signos1.png"),
-            height: 150,
-          ),
-        ),
-      ],
+    //Widget para la imagen SizedBox(height: 175)
+    final llamadaLogo = Center(
+      child: logoLogIn(context, aLogIn),
     );
 
     //Widget para mostrar una frase
@@ -158,10 +151,8 @@ class _logInState extends State<logIn> {
                       textStyle: const TextStyle(fontSize: 20),
                     ),
                     onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => contenidoMainMenu()));
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => mainMenu()));
                     },
                     child: const Text(
                       'Ingresar',
@@ -221,7 +212,7 @@ class _logInState extends State<logIn> {
               ),
               onPressed: () {
                 Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => signUp()));
+                    context, MaterialPageRoute(builder: (context) => help()));
               },
               child: Text(
                 "\nContáctanos",
@@ -237,6 +228,7 @@ class _logInState extends State<logIn> {
     );
 
     final contenidoLogIn = Column(children: <Widget>[
+      SizedBox(height: 12),
       llamadaLogo,
       fraseLogIn,
       fraseWelcome,

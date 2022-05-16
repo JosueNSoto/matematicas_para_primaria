@@ -1,6 +1,7 @@
 import 'package:elgood_de_mate/logIn.dart';
 import 'package:elgood_de_mate/mainMenu.dart';
 import 'package:flutter/material.dart';
+import 'helpers/margenes.dart';
 
 class help extends StatefulWidget {
   @override
@@ -9,38 +10,20 @@ class help extends StatefulWidget {
 
 class _signUpState extends State<help> {
   @override
+  var aContactanos;
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(),
-      home: Scaffold(
-        body: Container(
-          margin: EdgeInsets.only(top: 12),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              TextButton(
-                style: TextButton.styleFrom(
-                  textStyle: const TextStyle(fontSize: 12),
-                ),
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-                child: Text(
-                  "Volvers",
-                  style: TextStyle(
-                    color: Color.fromRGBO(254, 102, 37, 1),
-                    decoration: TextDecoration.underline,
-                  ),
-                ),
-              ),
-              Image(
-                image: AssetImage("assets/img/signos1.png"),
-                height: 100,
-              )
-            ],
-          ),
-        ),
-      ),
-    );
+        theme: ThemeData(),
+        home: Scaffold(
+          body: Container(
+              padding: EdgeInsets.only(left: 35, right: 35, top: 12),
+              child: Center(
+                  child: Column(
+                children: <Widget>[
+                  margenSup_MainMenu(context, aContactanos),
+                  Image(image: AssetImage("assets/img/inProgress.jpg")),
+                ],
+              ))),
+        ));
   }
 }

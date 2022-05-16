@@ -14,8 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(),
       home: Scaffold(
-        body: Center(
-          child: logIn(),
+        body: Column(
+          children: [
+            logIn(),
+          ],
         ),
       ),
     );

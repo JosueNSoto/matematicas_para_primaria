@@ -1,4 +1,6 @@
+import 'package:elgood_de_mate/helpers/margenes.dart';
 import 'package:elgood_de_mate/logIn.dart';
+import 'package:elgood_de_mate/mainMenu.dart';
 import 'package:flutter/material.dart';
 import "logIn.dart";
 import 'signUp.dart';
@@ -10,6 +12,7 @@ class crearPass extends StatefulWidget {
 
 class _crearPassState extends State<crearPass> {
   @override
+  var aCrearPass;
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
@@ -18,17 +21,17 @@ class _crearPassState extends State<crearPass> {
           padding: EdgeInsets.only(left: 35, right: 35, top: 12),
           child: Column(
             children: <Widget>[
-              Image(
-                image: AssetImage("assets/img/signos1.png"),
-                height: 150,
-              ),
+              logoLogIn(context, aCrearPass),
               SizedBox(height: 25),
-              Text(
-                "Crea tu contraseña",
-                style: TextStyle(
-                  color: Color.fromRGBO(254, 102, 37, 1),
-                  fontSize: 19.0,
-                  fontWeight: FontWeight.bold,
+              Container(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  "Crea tu contraseña",
+                  style: TextStyle(
+                    color: Color.fromRGBO(254, 102, 37, 1),
+                    fontSize: 19.0,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
               SizedBox(height: 25),
@@ -150,8 +153,10 @@ class _crearPassState extends State<crearPass> {
                           textStyle: const TextStyle(fontSize: 20),
                         ),
                         onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => logIn()));
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => mainMenu()));
                         },
                         child: const Text(
                           'Generar Usuario',
