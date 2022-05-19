@@ -21,7 +21,6 @@
             ),
           ),*/
 
-
 /*void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -70,3 +69,13 @@ class MyStatelessWidget extends StatelessWidget {
   }
 }
 */
+class test {
+  int id = 0;
+  String nombre = "nombre";
+  String especie = "especie";
+
+  //Animal({this.id, this.nombre, this.especie});
+  Map<String, dynamic> toMap() {
+    return {'id': id, 'nombre': nombre, 'especie': especie};
+  }
+}

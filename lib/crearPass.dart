@@ -22,7 +22,7 @@ class _crearPassState extends State<crearPass> {
           child: Column(
             children: <Widget>[
               logoLogIn(context, aCrearPass),
-              SizedBox(height: 25),
+              SizedBox(height: 10),
               Container(
                 alignment: Alignment.centerLeft,
                 child: Text(
@@ -34,9 +34,9 @@ class _crearPassState extends State<crearPass> {
                   ),
                 ),
               ),
-              SizedBox(height: 25),
+              SizedBox(height: 10),
               Text(
-                "Tu usuario",
+                "Tu usuario es:",
                 style: TextStyle(
                   color: Color.fromRGBO(254, 102, 37, 1),
                   fontSize: 12,
@@ -55,9 +55,9 @@ class _crearPassState extends State<crearPass> {
                   return null;
                 },
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 10),
               Text(
-                "En 3 palabras describe tu película favorita",
+                "En 3 palabras, describe tu película favorita",
                 style: TextStyle(
                   color: Color.fromRGBO(254, 102, 37, 1),
                   fontSize: 12.0,
@@ -72,64 +72,141 @@ class _crearPassState extends State<crearPass> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              TextFormField(
-                decoration: const InputDecoration(
-                    //Debemos cambiar este hinText por una variable con el usu
-                    hintText: "Divertida",
-                    hintStyle: TextStyle(fontSize: 12.0)),
-                validator: (String? value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Ingresa una palabra';
-                  }
-                  return null;
-                },
+              SizedBox(
+                height: 10,
               ),
-              TextFormField(
-                decoration: const InputDecoration(
-                    //Debemos cambiar este hinText por una variable con el usu
-                    hintText: "Aburrida",
-                    hintStyle: TextStyle(fontSize: 12.0)),
-                validator: (String? value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Ingresa una palabra';
-                  }
-                  return null;
-                },
+              Container(
+                margin: EdgeInsets.only(left: 40, right: 40),
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        // borderSide: BorderSide(color: Colors.transparent)
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        borderSide: BorderSide(color: Colors.green),
+                      ),
+                      //Debemos cambiar este hinText por una variable con el usu
+                      hintText: "Ejemplo: Divertida",
+                      hintStyle: TextStyle(fontSize: 12.0)),
+                  validator: (String? value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Ingresa una palabra';
+                    }
+                    return null;
+                  },
+                ),
               ),
-              TextFormField(
-                decoration: const InputDecoration(
-                    //Debemos cambiar este hinText por una variable con el usu
-                    hintText: "Comedia",
-                    hintStyle: TextStyle(fontSize: 12.0)),
-                validator: (String? value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Ingresa una palabra';
-                  }
-                  return null;
-                },
+              SizedBox(
+                height: 5,
               ),
-              SizedBox(height: 20),
+              Container(
+                margin: EdgeInsets.only(left: 40, right: 40),
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        // borderSide: BorderSide(color: Colors.transparent)
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        borderSide: BorderSide(color: Colors.green),
+                      ),
+                      //Debemos cambiar este hinText por una variable con el usu
+                      hintText: "Ejemplo: Aburrida",
+                      hintStyle: TextStyle(fontSize: 12.0)),
+                  validator: (String? value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Ingresa una palabra';
+                    }
+                    return null;
+                  },
+                ),
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 40, right: 40),
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        // borderSide: BorderSide(color: Colors.transparent)
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        borderSide: BorderSide(color: Colors.green),
+                      ),
+                      //Debemos cambiar este hinText por una variable con el usu
+                      hintText: "Ejemplo: Comedia",
+                      hintStyle: TextStyle(fontSize: 12.0)),
+                  validator: (String? value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Ingresa una palabra';
+                    }
+                    return null;
+                  },
+                ),
+              ),
+              SizedBox(height: 10),
               Text(
-                "Escribe el nombrre de tu platillo favorito",
+                "Escribe el nombre de tu animal favorito",
                 style: TextStyle(
                   color: Color.fromRGBO(254, 102, 37, 1),
                   fontSize: 12.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 40, right: 40),
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        // borderSide: BorderSide(color: Colors.transparent)
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        borderSide: BorderSide(color: Colors.green),
+                      ),
+                      //Debemos cambiar este hinText por una variable con el usu
+                      hintText: "Ejemplo: Perro",
+                      hintStyle: TextStyle(fontSize: 12.0)),
+                  validator: (String? value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Ingresa una palabra';
+                    }
+                    return null;
+                  },
+                ),
+              ),
+              SizedBox(height: 10),
+              Text(
+                "Tu contraseña es:",
+                style: TextStyle(
+                  color: Color.fromRGBO(254, 102, 37, 1),
+                  fontSize: 12,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               TextFormField(
                 decoration: const InputDecoration(
                     //Debemos cambiar este hinText por una variable con el usu
-                    hintText: "Comedia",
+                    hintText: "PerroDivertidaAburridaComedia",
                     hintStyle: TextStyle(fontSize: 12.0)),
                 validator: (String? value) {
                   if (value == null || value.isEmpty) {
-                    return 'Ingresa una palabra';
+                    return 'Ingresa tu nombre';
                   }
                   return null;
                 },
               ),
-              SizedBox(height: 25),
+              SizedBox(height: 15),
               ClipRRect(
                   borderRadius: BorderRadius.circular(10),
                   child: Stack(
@@ -143,20 +220,13 @@ class _crearPassState extends State<crearPass> {
                       ),
                       TextButton(
                         style: TextButton.styleFrom(
-                          padding: const EdgeInsets.only(
-                            left: 30,
-                            right: 30,
-                            top: 20,
-                            bottom: 20,
-                          ),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 30, vertical: 20),
                           primary: Colors.white,
                           textStyle: const TextStyle(fontSize: 20),
                         ),
                         onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => mainMenu()));
+                          Navigator.of(context).pushNamed('/mainMenu');
                         },
                         child: const Text(
                           'Generar Usuario',

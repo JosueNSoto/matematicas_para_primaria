@@ -2,6 +2,7 @@ import 'package:elgood_de_mate/helpers/margenes.dart';
 import 'package:elgood_de_mate/logIn.dart';
 import 'package:flutter/material.dart';
 import 'crearPass.dart';
+import 'package:sqflite/sqflite.dart';
 
 class signUp extends StatefulWidget {
   @override
