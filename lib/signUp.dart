@@ -1,5 +1,5 @@
 import 'package:elgood_de_mate/helpers/margenes.dart';
-import 'package:elgood_de_mate/logIn.dart';
+import 'newLogIn.dart';
 import 'package:flutter/material.dart';
 import 'crearPass.dart';
 import 'package:sqflite/sqflite.dart';
@@ -10,11 +10,15 @@ class signUp extends StatefulWidget {
 }
 
 class _signUpState extends State<signUp> {
+  final _conUsu = TextEditingController();
+  final _pass = TextEditingController();
+
   @override
   var aSignUp;
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Container(
           padding: EdgeInsets.only(left: 35, right: 35, top: 12),
@@ -42,15 +46,17 @@ class _signUpState extends State<signUp> {
                     fontSize: 12.0,
                     fontWeight: FontWeight.bold),
               ),
-              TextFormField(
-                decoration: const InputDecoration(
-                    hintText: "Ximena", hintStyle: TextStyle(fontSize: 12.0)),
-                validator: (String? value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Ingresa tu nombre';
-                  }
-                  return null;
-                },
+              Container(
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                      hintText: "Ximena", hintStyle: TextStyle(fontSize: 12.0)),
+                  validator: (String? value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Ingresa tu nombre';
+                    }
+                    return null;
+                  },
+                ),
               ),
               SizedBox(height: 25),
               Text(
@@ -60,16 +66,18 @@ class _signUpState extends State<signUp> {
                     fontSize: 12.0,
                     fontWeight: FontWeight.bold),
               ),
-              TextFormField(
-                decoration: const InputDecoration(
-                    hintText: "Morales Miller",
-                    hintStyle: TextStyle(fontSize: 12.0)),
-                validator: (String? value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Ingresa tus apellidos';
-                  }
-                  return null;
-                },
+              Container(
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                      hintText: "Morales Miller",
+                      hintStyle: TextStyle(fontSize: 12.0)),
+                  validator: (String? value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Ingresa tus apellidos';
+                    }
+                    return null;
+                  },
+                ),
               ),
               SizedBox(height: 25),
               ClipRRect(

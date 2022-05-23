@@ -13,17 +13,20 @@ class _signUpState extends State<help> {
   var aContactanos;
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData(),
-        home: Scaffold(
-          body: Container(
-              padding: EdgeInsets.only(left: 35, right: 35, top: 12),
-              child: Center(
-                  child: Column(
-                children: <Widget>[
-                  margenSup_MainMenu(context, aContactanos),
-                  Image(image: AssetImage("assets/img/inProgress.jpg")),
-                ],
-              ))),
-        ));
+      theme: ThemeData(),
+      home: Scaffold(
+        body: Container(
+          padding: EdgeInsets.only(left: 35, right: 35, top: 12),
+          child: Center(
+            child: Column(
+              children: <Widget>[
+                margenSup_MainMenu(context, aContactanos),
+                Image(image: AssetImage("assets/img/inProgress.jpg")),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }

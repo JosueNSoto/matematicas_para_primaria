@@ -1,5 +1,5 @@
 import 'package:elgood_de_mate/helpers/margenes.dart';
-import 'package:elgood_de_mate/logIn.dart';
+import 'newLogIn.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
@@ -14,6 +14,7 @@ class _mainMenuState extends State<mainMenu> {
     // TODO: implement build
     var aMainMenu;
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Container(
           padding: EdgeInsets.only(left: 35, right: 35, top: 12),

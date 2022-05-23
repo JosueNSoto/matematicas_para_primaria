@@ -1,8 +1,7 @@
 import 'package:elgood_de_mate/helpers/margenes.dart';
-import 'package:elgood_de_mate/logIn.dart';
 import 'package:elgood_de_mate/mainMenu.dart';
 import 'package:flutter/material.dart';
-import "logIn.dart";
+import 'newLogIn.dart';
 import 'signUp.dart';
 
 class crearPass extends StatefulWidget {
@@ -16,6 +15,7 @@ class _crearPassState extends State<crearPass> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Container(
           padding: EdgeInsets.only(left: 35, right: 35, top: 12),
@@ -226,7 +226,10 @@ class _crearPassState extends State<crearPass> {
                           textStyle: const TextStyle(fontSize: 20),
                         ),
                         onPressed: () {
-                          Navigator.of(context).pushNamed('/mainMenu');
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => mainMenu()));
                         },
                         child: const Text(
                           'Generar Usuario',
