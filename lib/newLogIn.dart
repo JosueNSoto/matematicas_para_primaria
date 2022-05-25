@@ -62,7 +62,7 @@ class _newLogInState extends State<newLogIn> {
                   fontSize: 12.0,
                   fontWeight: FontWeight.bold),
             ),
-            recolectarDatos(controller),
+            recolectarDatos(),
             Text(
               "\nPassword",
               style: TextStyle(

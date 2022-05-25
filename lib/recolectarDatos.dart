@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 class recolectarDatos extends StatelessWidget {
   TextEditingController controller = TextEditingController();
   String hintNombre = "a";
+  // IconData icon;
   bool isObscureText = false;
 
-  /*recolectarDatos([String hintNombre = "a", bool hideText = false]) {
+  recolectarDatos([String hintNombre = "a", bool hideText = false]) {
+    //this.icon;
     this.controller;
     this.hintNombre;
     this.isObscureText;
-  }*/
-  recolectarDatos(
-      {this.controller, this.hintNombre, this.isObscureText = false});
+  }
 
   @override
   Widget build(BuildContext context) {

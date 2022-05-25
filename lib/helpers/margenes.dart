@@ -41,13 +41,6 @@ margenSup_MainMenu(BuildContext context, image) {
                         size: 24.0,
                       )),
                 ),
-                /*Container(
-              alignment: Alignment.centerRight,
-              child: Text(
-                "Cerrar Sesión",
-                style: TextStyle(fontSize: 11),
-              ),
-            )*/
               ],
             ),
           ),
@@ -66,37 +59,38 @@ margenSup_MainMenu(BuildContext context, image) {
 
 margenSup_Actividades(BuildContext context, image) {
   return Row(
-    //verticalDirection: VerticalDirection.up,
     children: <Widget>[
       new Image(
         image: AssetImage("assets/img/signos1.png"),
         height: 50,
       ),
       Expanded(
-          child: Container(
-        padding: EdgeInsets.only(left: 10),
-        child: Text(
-          "MatElGod",
-          style: TextStyle(
-            color: Color.fromRGBO(151, 151, 151, 1),
-            fontSize: 13,
+        child: Container(
+          padding: EdgeInsets.only(left: 10),
+          child: Text(
+            "MatElGod",
+            style: TextStyle(
+              color: Color.fromRGBO(151, 151, 151, 1),
+              fontSize: 13,
+            ),
           ),
         ),
-      )),
+      ),
       Expanded(
         child: Column(
           children: <Widget>[
             Container(
               alignment: Alignment.centerRight,
               child: IconButton(
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                  icon: Icon(
-                    Icons.arrow_back,
-                    color: Color.fromRGBO(254, 102, 37, 1),
-                    size: 24.0,
-                  )),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                icon: Icon(
+                  Icons.arrow_back,
+                  color: Color.fromRGBO(254, 102, 37, 1),
+                  size: 24.0,
+                ),
+              ),
             ),
             /*Container(
               alignment: Alignment.centerRight,
