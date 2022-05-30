@@ -13,10 +13,9 @@ class _mainMenuState extends State<mainMenu> {
   Widget build(BuildContext context) {
     // TODO: implement build
     var aMainMenu;
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Container(
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Container(
           padding: EdgeInsets.only(left: 35, right: 35, top: 12),
           child: Column(
             children: <Widget>[

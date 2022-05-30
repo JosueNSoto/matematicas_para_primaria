@@ -14,10 +14,9 @@ class _crearPassState extends State<crearPass> {
   var aCrearPass;
   Widget build(BuildContext context) {
     // TODO: implement build
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Container(
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Container(
           padding: EdgeInsets.only(left: 35, right: 35, top: 12),
           child: Column(
             children: <Widget>[
@@ -45,9 +44,11 @@ class _crearPassState extends State<crearPass> {
               ),
               TextFormField(
                 decoration: const InputDecoration(
-                    //Debemos cambiar este hinText por una variable con el usu
-                    hintText: "mm.ximena367",
-                    hintStyle: TextStyle(fontSize: 12.0)),
+                  //Debemos cambiar este hinText por una variable con el usu
+                  hintText: "mm.ximena367",
+                  hintStyle: TextStyle(fontSize: 12.0),
+                  prefixIcon: Icon(Icons.person),
+                ),
                 validator: (String? value) {
                   if (value == null || value.isEmpty) {
                     return 'Ingresa tu nombre';
@@ -152,7 +153,7 @@ class _crearPassState extends State<crearPass> {
               ),
               SizedBox(height: 10),
               Text(
-                "Escribe el nombre de tu animal favorito",
+                "En 1 palabra, escribe tu animal favorito",
                 style: TextStyle(
                   color: Color.fromRGBO(254, 102, 37, 1),
                   fontSize: 12.0,
@@ -196,9 +197,11 @@ class _crearPassState extends State<crearPass> {
               ),
               TextFormField(
                 decoration: const InputDecoration(
-                    //Debemos cambiar este hinText por una variable con el usu
-                    hintText: "PerroDivertidaAburridaComedia",
-                    hintStyle: TextStyle(fontSize: 12.0)),
+                  //Debemos cambiar este hinText por una variable con el usu
+                  hintText: "PerroDivertidaAburridaComedia",
+                  hintStyle: TextStyle(fontSize: 12.0),
+                  prefixIcon: Icon(Icons.lock),
+                ),
                 validator: (String? value) {
                   if (value == null || value.isEmpty) {
                     return 'Ingresa tu nombre';

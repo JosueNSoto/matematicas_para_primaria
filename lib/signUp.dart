@@ -17,10 +17,9 @@ class _signUpState extends State<signUp> {
   var aSignUp;
   Widget build(BuildContext context) {
     // TODO: implement build
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Container(
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Container(
           padding: EdgeInsets.only(left: 35, right: 35, top: 12),
           alignment: Alignment.centerLeft,
           child: Column(
@@ -49,7 +48,9 @@ class _signUpState extends State<signUp> {
               Container(
                 child: TextFormField(
                   decoration: const InputDecoration(
-                      hintText: "Ximena", hintStyle: TextStyle(fontSize: 12.0)),
+                    hintText: "Ximena",
+                    hintStyle: TextStyle(fontSize: 12.0),
+                  ),
                   validator: (String? value) {
                     if (value == null || value.isEmpty) {
                       return 'Ingresa tu nombre';
