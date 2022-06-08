@@ -8,6 +8,7 @@ import 'helpers/alerts.dart';
 import 'helpers/margenes.dart';
 import 'signUp.dart';
 import 'contactanos.dart';
+import 'getLogIn.dart';
 
 class newLogIn extends StatefulWidget {
   @override
@@ -66,7 +67,21 @@ class _newLogInState extends State<newLogIn> {
                       fontSize: 12.0,
                       fontWeight: FontWeight.bold),
                 ),
-                getLogIn(),
+                Container(
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                      hintText: "Ejmplo: Ximena365",
+                      hintStyle: TextStyle(fontSize: 12.0),
+                      prefixIcon: Icon(Icons.person),
+                    ),
+                    validator: (String? value) {
+                      if (value == null || value.isEmpty) {
+                        return 'Ingresa tu usuario';
+                      }
+                      return null;
+                    },
+                  ),
+                ),
                 Text(
                   "\nPassword",
                   style: TextStyle(

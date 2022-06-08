@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 
-class getLogIn extends StatelessWidget {
+/*class getLogIn extends StatelessWidget {
   TextEditingController controller = TextEditingController();
-  String hintNombre = "Ximena";
+  String hintNombre;
   IconData icon;
-  bool isObscureText = false;
+  bool isObscureText; //false
 
-  getLogIn([String hintNombre = "Ejemplo", bool hideText = false]) {
-    //this.icon;
-    this.controller;
-    this.hintNombre;
-    this.isObscureText;
-  }
+  getLogIn({
+    required this.hintNombre,
+    required this.icon,
+    required this.isObscureText,
+  });
   /*TextEditingController controller;
   String hintNombre;
   IconData icon;
@@ -46,4 +45,4 @@ class getLogIn extends StatelessWidget {
       ),
     );
   }
-}
+}*/
