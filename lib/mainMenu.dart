@@ -2,7 +2,13 @@ import 'package:elgood_de_mate/helpers/margenes.dart';
 import 'newLogIn.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:flutter/scheduler.dart' show timeDilation;
+import 'Eje1/act1_numero.dart';
+import 'Eje1/act2_sum_res.dart';
+import 'Eje1/act3_mult_div.dart';
+import 'Eje2/act1_ubi_espacial.dart';
+import 'Eje2/act2_figuras.dart';
+import 'Eje2/act3_cuerpos_geo.dart';
+import 'Eje3/act1_estadistica.dart';
 
 class mainMenu extends StatefulWidget {
   @override
@@ -84,7 +90,12 @@ class _mainMenuState extends State<mainMenu> {
                         style: TextButton.styleFrom(
                           textStyle: const TextStyle(fontSize: 12),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => numero()));
+                        },
                         child: Row(
                           children: <Widget>[
                             Checkbox(
