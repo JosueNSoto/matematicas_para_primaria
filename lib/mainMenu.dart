@@ -23,6 +23,7 @@ class _mainMenuState extends State<mainMenu> {
   Widget build(BuildContext context) {
     // TODO: implement build
     var aMainMenu;
+    var act2;
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
@@ -92,9 +93,11 @@ class _mainMenuState extends State<mainMenu> {
                         ),
                         onPressed: () {
                           Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => numero()));
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => numero(),
+                            ),
+                          );
                         },
                         child: Row(
                           children: <Widget>[
@@ -122,7 +125,14 @@ class _mainMenuState extends State<mainMenu> {
                         style: TextButton.styleFrom(
                           textStyle: const TextStyle(fontSize: 12),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => sum_res(),
+                            ),
+                          );
+                        },
                         child: Row(
                           children: <Widget>[
                             Checkbox(

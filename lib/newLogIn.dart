@@ -70,7 +70,7 @@ class _newLogInState extends State<newLogIn> {
                 Container(
                   child: TextFormField(
                     decoration: InputDecoration(
-                      hintText: "Ejmplo: Ximena365",
+                      hintText: "Ejemplo: Ximena365",
                       hintStyle: TextStyle(fontSize: 12.0),
                       prefixIcon: Icon(Icons.person),
                     ),
