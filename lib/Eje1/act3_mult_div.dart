@@ -43,8 +43,8 @@ class _multi_divState extends State<multi_div> {
                   //border: Border.all(color: Colors.amber),
                   color: Color.fromRGBO(54, 93, 137, 0.1),
                 ),
-                width: 345,
-                /*height: 150,*/
+                width: 1000,
+                //Inicio del cuadro de actividades
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -68,7 +68,7 @@ class _multi_divState extends State<multi_div> {
                       ),
                     ),
                     Text(
-                      "Ejmplos",
+                      "Ejemplos",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 15,
@@ -91,8 +91,11 @@ class _multi_divState extends State<multi_div> {
                     ),
                     Container(
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Actividad 1"),
+                          Center(
+                            child: Text("Actividad 1"),
+                          ),
                           SizedBox(height: 3),
                           Text(
                             "Desarrollo de la actividad 1",
@@ -107,9 +110,25 @@ class _multi_divState extends State<multi_div> {
                               color: Color.fromARGB(255, 221, 169, 66),
                             ),
                           ),
+                          SizedBox(height: 3),
                         ],
                       ),
                     ),
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: Container(
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            'Validar respuesta',
+                            style: TextStyle(fontSize: 12),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            primary: Color.fromARGB(227, 75, 161, 65),
+                          ),
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),

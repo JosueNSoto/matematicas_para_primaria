@@ -28,7 +28,7 @@ class _sum_resState extends State<sum_res> {
                     style: TextStyle(fontSize: 12),
                   ),
                   Text(
-                    "Múltiplicación y divisón",
+                    "Adición y sustracción",
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Color.fromARGB(255, 30, 59, 92),
@@ -37,6 +37,7 @@ class _sum_resState extends State<sum_res> {
                 ],
               ),
               SizedBox(height: 5),
+              //Diseño del cuadro de actividades
               Container(
                 padding: EdgeInsets.all(10.0),
                 decoration: BoxDecoration(
@@ -44,8 +45,8 @@ class _sum_resState extends State<sum_res> {
                   //border: Border.all(color: Colors.amber),
                   color: Color.fromRGBO(54, 93, 137, 0.1),
                 ),
-                width: 345,
-                /*height: 150,*/
+                width: 1000,
+                //Inicio del cuadro de actividades
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -69,7 +70,7 @@ class _sum_resState extends State<sum_res> {
                       ),
                     ),
                     Text(
-                      "Ejmplos",
+                      "Ejemplos",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 15,
@@ -92,8 +93,11 @@ class _sum_resState extends State<sum_res> {
                     ),
                     Container(
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Actividad 1"),
+                          Center(
+                            child: Text("Actividad 1"),
+                          ),
                           SizedBox(height: 3),
                           Text(
                             "Desarrollo de la actividad 1",
@@ -108,9 +112,25 @@ class _sum_resState extends State<sum_res> {
                               color: Color.fromARGB(255, 221, 169, 66),
                             ),
                           ),
+                          SizedBox(height: 3),
                         ],
                       ),
                     ),
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: Container(
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            'Validar respuesta',
+                            style: TextStyle(fontSize: 12),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            primary: Color.fromARGB(227, 75, 161, 65),
+                          ),
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
