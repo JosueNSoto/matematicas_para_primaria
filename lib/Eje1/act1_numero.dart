@@ -52,14 +52,66 @@ class _numeroState extends State<numero> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "efafawfaw",
+                      "Repaso",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 15,
                       ),
                     ),
                     Container(
-                      child: Text("Acá el texto de la descripción"),
+                      child: Column(
+                        children: [
+                          Text(
+                            "Texto de descripción",
+                            style: TextStyle(
+                              color: Color.fromRGBO(254, 102, 37, 1),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Text(
+                      "Ejmplos",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                      ),
+                    ),
+                    Container(
+                      child: Text(
+                        "Imágenes de Ejemplo",
+                        style: TextStyle(
+                          color: Color.fromRGBO(254, 102, 37, 1),
+                        ),
+                      ),
+                    ),
+                    Text(
+                      "Actividades",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                      ),
+                    ),
+                    Container(
+                      child: Column(
+                        children: [
+                          Text("Actividad 1"),
+                          SizedBox(height: 3),
+                          Text(
+                            "Desarrollo de la actividad 1",
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 49, 95, 148),
+                            ),
+                          ),
+                          SizedBox(height: 3),
+                          Text(
+                            "Respuesta de la actividad 1",
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 221, 169, 66),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),

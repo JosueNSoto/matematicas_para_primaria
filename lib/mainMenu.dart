@@ -159,7 +159,14 @@ class _mainMenuState extends State<mainMenu> {
                         style: TextButton.styleFrom(
                           textStyle: const TextStyle(fontSize: 12),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => multi_div(),
+                            ),
+                          );
+                        },
                         child: Row(
                           children: <Widget>[
                             Checkbox(
