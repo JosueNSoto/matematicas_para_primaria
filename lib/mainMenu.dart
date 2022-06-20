@@ -220,7 +220,14 @@ class _mainMenuState extends State<mainMenu> {
                         style: TextButton.styleFrom(
                           textStyle: const TextStyle(fontSize: 12),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ubiEspacial(),
+                            ),
+                          );
+                        },
                         child: Row(
                           children: <Widget>[
                             Checkbox(
@@ -247,7 +254,14 @@ class _mainMenuState extends State<mainMenu> {
                         style: TextButton.styleFrom(
                           textStyle: const TextStyle(fontSize: 12),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => figuras(),
+                            ),
+                          );
+                        },
                         child: Row(
                           children: <Widget>[
                             Checkbox(
@@ -274,7 +288,14 @@ class _mainMenuState extends State<mainMenu> {
                         style: TextButton.styleFrom(
                           textStyle: const TextStyle(fontSize: 12),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => cuerposGeo(),
+                            ),
+                          );
+                        },
                         child: Row(
                           children: <Widget>[
                             Checkbox(
@@ -328,7 +349,14 @@ class _mainMenuState extends State<mainMenu> {
                         style: TextButton.styleFrom(
                           textStyle: const TextStyle(fontSize: 12),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => estadistica(),
+                            ),
+                          );
+                        },
                         child: Row(
                           children: <Widget>[
                             Checkbox(

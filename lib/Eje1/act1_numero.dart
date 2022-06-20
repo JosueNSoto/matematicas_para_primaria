@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:elgood_de_mate/helpers/margenes.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +13,6 @@ class _numeroState extends State<numero> {
   String titActividad1 = "Multiplicación y división";
   Widget build(BuildContext context) {
     // TODO: implement build
-    double progresoActividad = 0.5;
     var aAct1_E1;
     return Scaffold(
       body: SingleChildScrollView(
@@ -24,6 +25,7 @@ class _numeroState extends State<numero> {
               margenSup_Actividades(context, aAct1_E1),
               SizedBox(height: 5),
               Row(
+                // ignore: prefer_const_literals_to_create_immutables
                 children: [
                   Text(
                     "1. Número, álgebra y variación > ",
@@ -75,11 +77,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '1',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(213, 166, 189, 1),
+                                ),
                               ),
                               Text(
                                 'Decena de Millar',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(213, 166, 189, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -87,11 +95,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '0',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(234, 153, 153, 1),
+                                ),
                               ),
                               Text(
                                 'Unidad de Millar',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(234, 153, 153, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -99,11 +113,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '0',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(180, 167, 214, 1),
+                                ),
                               ),
                               Text(
                                 'Centena',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(180, 167, 214, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -111,11 +131,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '0',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(182, 215, 168, 1),
+                                ),
                               ),
                               Text(
                                 'Decena',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(182, 215, 168, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -123,11 +149,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '0',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(227, 108, 9, 1),
+                                ),
                               ),
                               Text(
                                 'Unidad',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(227, 108, 9, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -139,16 +171,45 @@ class _numeroState extends State<numero> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Text(
-                            "El número completo es: 10,000\nEl número escrito es: Diez mil ",
-                            style: TextStyle(fontSize: 12),
+                          Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Text(
+                                    "El número completo es: ",
+                                    style: TextStyle(fontSize: 12),
+                                  ),
+                                  Text(
+                                    "10,000",
+                                    style: TextStyle(
+                                      color: Color.fromRGBO(254, 102, 37, 1),
+                                      fontSize: 12,
+                                    ),
+                                  )
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "El número escrito es: ",
+                                    style: TextStyle(fontSize: 12),
+                                  ),
+                                  Text(
+                                    "Diez mil",
+                                    style: TextStyle(
+                                      color: Color.fromRGBO(254, 102, 37, 1),
+                                      fontSize: 12,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
                           ),
                           SizedBox(height: 5),
                           Text(
-                            'El número anterior a 10,000 es 9,999 (Nueve mil novecientos noventa y nueve).\nEl número después a 10,000 es 10,001 (Diez mil uno)',
+                            'El número anterior a 10,000 es 9,999 (Nueve mil novecientos noventa y nueve).\nEl número después a 10,000 es 10,001 (Diez mil uno).',
                             style: TextStyle(
                               fontSize: 12,
-                              color: Color.fromRGBO(254, 102, 37, 1),
                             ),
                           ),
                         ],
@@ -171,11 +232,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '2',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(213, 166, 189, 1),
+                                ),
                               ),
                               Text(
                                 'Decena de Millar',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(213, 166, 189, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -183,11 +250,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '0',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(234, 153, 153, 1),
+                                ),
                               ),
                               Text(
                                 'Unidad de Millar',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(234, 153, 153, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -195,11 +268,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '0',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(180, 167, 214, 1),
+                                ),
                               ),
                               Text(
                                 'Centena',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(180, 167, 214, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -207,11 +286,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '0',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(182, 215, 168, 1),
+                                ),
                               ),
                               Text(
                                 'Decena',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(182, 215, 168, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -219,11 +304,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '0',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(227, 108, 9, 1),
+                                ),
                               ),
                               Text(
                                 'Unidad',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(227, 108, 9, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -232,11 +323,39 @@ class _numeroState extends State<numero> {
                     ),
                     SizedBox(height: 10),
                     Container(
-                      child: Text(
-                        "El número completo es: 20,000\nEl número escrito es: Veinte mil",
-                        style: TextStyle(
-                            fontSize: 12,
-                            color: Color.fromRGBO(254, 102, 37, 1)),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "El número completo es: ",
+                                style: TextStyle(fontSize: 12),
+                              ),
+                              Text(
+                                "20,000",
+                                style: TextStyle(
+                                  color: Color.fromRGBO(254, 102, 37, 1),
+                                  fontSize: 12,
+                                ),
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                "El número escrito es: ",
+                                style: TextStyle(fontSize: 12),
+                              ),
+                              Text(
+                                "Veinte mil",
+                                style: TextStyle(
+                                  color: Color.fromRGBO(254, 102, 37, 1),
+                                  fontSize: 12,
+                                ),
+                              )
+                            ],
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(height: 20),
@@ -248,11 +367,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '3',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(213, 166, 189, 1),
+                                ),
                               ),
                               Text(
                                 'Decena de Millar',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(213, 166, 189, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -260,11 +385,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '0',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(234, 153, 153, 1),
+                                ),
                               ),
                               Text(
                                 'Unidad de Millar',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(234, 153, 153, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -272,11 +403,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '5',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(180, 167, 214, 1),
+                                ),
                               ),
                               Text(
                                 'Centena',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(180, 167, 214, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -284,11 +421,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '0',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(182, 215, 168, 1),
+                                ),
                               ),
                               Text(
                                 'Decena',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(182, 215, 168, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -296,11 +439,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '0',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(227, 108, 9, 1),
+                                ),
                               ),
                               Text(
                                 'Unidad',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(227, 108, 9, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -309,12 +458,39 @@ class _numeroState extends State<numero> {
                     ),
                     SizedBox(height: 10),
                     Container(
-                      child: Text(
-                        "El número completo es: 30,500\nEl número escrito es: Treinta mil quinientos",
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: Color.fromRGBO(254, 102, 37, 1),
-                        ),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "El número completo es: ",
+                                style: TextStyle(fontSize: 12),
+                              ),
+                              Text(
+                                "30,500",
+                                style: TextStyle(
+                                  color: Color.fromRGBO(254, 102, 37, 1),
+                                  fontSize: 12,
+                                ),
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                "El número escrito es: ",
+                                style: TextStyle(fontSize: 12),
+                              ),
+                              Text(
+                                "Treinta mil quinientos",
+                                style: TextStyle(
+                                  color: Color.fromRGBO(254, 102, 37, 1),
+                                  fontSize: 12,
+                                ),
+                              )
+                            ],
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(height: 20),
@@ -326,11 +502,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '7',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(213, 166, 189, 1),
+                                ),
                               ),
                               Text(
                                 'Decena de Millar',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(213, 166, 189, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -338,11 +520,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '5',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(234, 153, 153, 1),
+                                ),
                               ),
                               Text(
                                 'Unidad de Millar',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(234, 153, 153, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -350,11 +538,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '1',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(180, 167, 214, 1),
+                                ),
                               ),
                               Text(
                                 'Centena',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(180, 167, 214, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -362,11 +556,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '8',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(182, 215, 168, 1),
+                                ),
                               ),
                               Text(
                                 'Decena',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(182, 215, 168, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -374,11 +574,17 @@ class _numeroState extends State<numero> {
                             children: [
                               Text(
                                 '3',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(227, 108, 9, 1),
+                                ),
                               ),
                               Text(
                                 'Unidad',
-                                style: TextStyle(fontSize: 10),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Color.fromRGBO(227, 108, 9, 1),
+                                ),
                               ),
                             ],
                           ),
@@ -387,12 +593,39 @@ class _numeroState extends State<numero> {
                     ),
                     SizedBox(height: 10),
                     Container(
-                      child: Text(
-                        "El número completo es: 75,183\nEl número escrito es: Setenta y cinco mil ciento ochenta y tres",
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: Color.fromRGBO(254, 102, 37, 1),
-                        ),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "El número completo es: ",
+                                style: TextStyle(fontSize: 12),
+                              ),
+                              Text(
+                                "75,183",
+                                style: TextStyle(
+                                  color: Color.fromRGBO(254, 102, 37, 1),
+                                  fontSize: 12,
+                                ),
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                "El número escrito es: ",
+                                style: TextStyle(fontSize: 12),
+                              ),
+                              Text(
+                                "Setenta y cinco mil,\nciento ochenta y tres",
+                                style: TextStyle(
+                                  color: Color.fromRGBO(254, 102, 37, 1),
+                                  fontSize: 12,
+                                ),
+                              )
+                            ],
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(height: 10),
