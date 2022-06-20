@@ -29,7 +29,7 @@ class _newLogInState extends State<newLogIn> {
         scrollDirection: Axis.vertical,
         child: Center(
           child: Container(
-            padding: EdgeInsets.only(left: 35, right: 35, top: 12),
+            padding: EdgeInsets.only(left: 35, right: 35, top: 35),
             child: Column(
               children: <Widget>[
                 logoLogIn(context, aLogIn),

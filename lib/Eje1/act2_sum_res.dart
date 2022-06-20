@@ -15,8 +15,9 @@ class _sum_resState extends State<sum_res> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.only(left: 35, right: 35, top: 12),
+          padding: EdgeInsets.only(left: 15, right: 15, top: 35),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               //Margen Superior
               margenSup_Actividades(context, aAct2_E1),
@@ -35,6 +36,13 @@ class _sum_resState extends State<sum_res> {
                         fontSize: 12),
                   ),
                 ],
+              ),
+              Text(
+                "> Inserte tema",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 30, 59, 92),
+                    fontSize: 12),
               ),
               SizedBox(height: 5),
               //Diseño del cuadro de actividades

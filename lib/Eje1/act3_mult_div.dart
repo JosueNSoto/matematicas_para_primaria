@@ -14,8 +14,9 @@ class _multi_divState extends State<multi_div> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.only(left: 35, right: 35, top: 12),
+          padding: EdgeInsets.only(left: 15, right: 15, top: 35),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               //Margen Superior
               margenSup_Actividades(context, aAct3_E1),
@@ -34,6 +35,13 @@ class _multi_divState extends State<multi_div> {
                         fontSize: 12),
                   ),
                 ],
+              ),
+              Text(
+                "> Inserte tema",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 30, 59, 92),
+                    fontSize: 12),
               ),
               SizedBox(height: 5),
               Container(

@@ -9,7 +9,7 @@ class estadistica extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.only(left: 35, right: 35, top: 12),
+          padding: EdgeInsets.only(left: 15, right: 15, top: 35),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

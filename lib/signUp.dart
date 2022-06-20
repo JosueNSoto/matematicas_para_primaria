@@ -20,7 +20,7 @@ class _signUpState extends State<signUp> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.only(left: 35, right: 35, top: 12),
+          padding: EdgeInsets.only(left: 35, right: 35, top: 35),
           alignment: Alignment.centerLeft,
           child: Column(
             children: <Widget>[
