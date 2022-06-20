@@ -49,6 +49,7 @@ class _mainMenuState extends State<mainMenu> {
                     backgroundColor: Color.fromRGBO(54, 93, 137, 0.2),
                     progressColor: Color.fromRGBO(54, 93, 137, 1),
                     animation: true,
+                    animationDuration: 2000,
                     percent: porcentaje,
                     circularStrokeCap: CircularStrokeCap.round,
                     center: Text(
@@ -69,8 +70,8 @@ class _mainMenuState extends State<mainMenu> {
                   ),
                 ),
                 child: ExpansionTile(
-                  backgroundColor: Color.fromRGBO(254, 102, 37, 0.5),
-                  collapsedBackgroundColor: Color.fromRGBO(254, 102, 37, 1),
+                  backgroundColor: Color.fromRGBO(154, 185, 220, 1),
+                  collapsedBackgroundColor: Color.fromRGBO(54, 93, 137, 0.8),
                   iconColor: Colors.black,
                   collapsedIconColor: Colors.white,
                   title: Container(
@@ -198,8 +199,8 @@ class _mainMenuState extends State<mainMenu> {
                   ),
                 ),
                 child: ExpansionTile(
-                  backgroundColor: Color.fromRGBO(254, 102, 37, 0.5),
-                  collapsedBackgroundColor: Color.fromRGBO(254, 102, 37, 1),
+                  backgroundColor: Color.fromRGBO(180, 48, 36, 0.5),
+                  collapsedBackgroundColor: Color.fromRGBO(211, 42, 24, 0.8),
                   iconColor: Colors.black,
                   collapsedIconColor: Colors.white,
                   title: Container(
@@ -327,8 +328,8 @@ class _mainMenuState extends State<mainMenu> {
                   ),
                 ),
                 child: ExpansionTile(
-                  backgroundColor: Color.fromRGBO(254, 102, 37, 0.5),
-                  collapsedBackgroundColor: Color.fromRGBO(254, 102, 37, 1),
+                  backgroundColor: Color.fromRGBO(180, 48, 36, 0.5),
+                  collapsedBackgroundColor: Color.fromRGBO(211, 42, 24, 0.8),
                   iconColor: Colors.black,
                   collapsedIconColor: Colors.white,
                   title: Container(
