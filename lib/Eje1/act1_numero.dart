@@ -636,6 +636,11 @@ class _numeroState extends State<numero> {
                         fontSize: 15,
                       ),
                     ),
+                    Container(
+                      child: Column(
+                        children: [],
+                      ),
+                    ),
                     //Meter TODOS los containers en una lista para usar un colapse
                     /*Container(
                       child: Column(
@@ -901,4 +906,57 @@ class _numeroState extends State<numero> {
       ),
     );
   }
+}
+
+List<Item> _listaDeItem = generateItemsList(10);
+
+class listaActividades extends StatefulWidget {
+  @override
+  State<listaActividades> createState() => _listaActividadesState();
+}
+
+class _listaActividadesState extends State<listaActividades> {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return SingleChildScrollView(
+      child: Container(
+        child: _myWidgetExpansionPanel(),
+      ),
+    );
+  }
+
+  //Widget del expasionPanel
+  Widget _myWidgetExpansionPanel() {
+    return ExpansionPanelList(
+      expansionCallback: (int index, bool isExpanded) {
+        setState() {
+          var _listaDeItems;
+          _listaDeItems[index].isExpanded = !isExpanded;
+        }
+      },
+      children: [],
+    );
+  }
+}
+
+//Info del expasionPanel
+
+//item
+class Item {
+  String expanded = '';
+  String title = '';
+  bool isExpanded = true;
+  Item({this.expanded = '', this.title = '', this.isExpanded = true});
+}
+
+//generador del item
+List<Item> generateItemsList(int sizeOfTheList) {
+  return List.generate(sizeOfTheList, (int index) {
+    return Item(
+      expanded: '$index',
+      title: 'Item $index',
+      isExpanded: false,
+    );
+  });
 }
