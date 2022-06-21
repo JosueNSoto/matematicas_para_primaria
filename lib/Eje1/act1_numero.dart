@@ -930,10 +930,10 @@ class _listaActividadesState extends State<listaActividades> {
   Widget _myWidgetExpansionPanel() {
     return ExpansionPanelList(
       expansionCallback: (int index, bool isExpanded) {
-        setState() {
+        setState(() {
           var _listaDeItems;
           _listaDeItems[index].isExpanded = !isExpanded;
-        }
+        });
       },
       children: [],
     );
