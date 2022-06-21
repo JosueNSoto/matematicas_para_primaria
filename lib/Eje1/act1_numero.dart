@@ -133,14 +133,14 @@ class _numeroState extends State<numero> {
                                 '0',
                                 style: TextStyle(
                                   fontSize: 10,
-                                  color: Color.fromRGBO(182, 215, 168, 1),
+                                  color: Color.fromARGB(255, 84, 199, 34),
                                 ),
                               ),
                               Text(
                                 'Decena',
                                 style: TextStyle(
                                   fontSize: 10,
-                                  color: Color.fromRGBO(182, 215, 168, 1),
+                                  color: Color.fromARGB(255, 84, 199, 34),
                                 ),
                               ),
                             ],
@@ -288,14 +288,14 @@ class _numeroState extends State<numero> {
                                 '0',
                                 style: TextStyle(
                                   fontSize: 10,
-                                  color: Color.fromRGBO(182, 215, 168, 1),
+                                  color: Color.fromARGB(255, 84, 199, 34),
                                 ),
                               ),
                               Text(
                                 'Decena',
                                 style: TextStyle(
                                   fontSize: 10,
-                                  color: Color.fromRGBO(182, 215, 168, 1),
+                                  color: Color.fromARGB(255, 84, 199, 34),
                                 ),
                               ),
                             ],
@@ -423,14 +423,14 @@ class _numeroState extends State<numero> {
                                 '0',
                                 style: TextStyle(
                                   fontSize: 10,
-                                  color: Color.fromRGBO(182, 215, 168, 1),
+                                  color: Color.fromARGB(255, 84, 199, 34),
                                 ),
                               ),
                               Text(
                                 'Decena',
                                 style: TextStyle(
                                   fontSize: 10,
-                                  color: Color.fromRGBO(182, 215, 168, 1),
+                                  color: Color.fromARGB(255, 84, 199, 34),
                                 ),
                               ),
                             ],
@@ -558,14 +558,14 @@ class _numeroState extends State<numero> {
                                 '8',
                                 style: TextStyle(
                                   fontSize: 10,
-                                  color: Color.fromRGBO(182, 215, 168, 1),
+                                  color: Color.fromARGB(255, 84, 199, 34),
                                 ),
                               ),
                               Text(
                                 'Decena',
                                 style: TextStyle(
                                   fontSize: 10,
-                                  color: Color.fromRGBO(182, 215, 168, 1),
+                                  color: Color.fromARGB(255, 84, 199, 34),
                                 ),
                               ),
                             ],
@@ -617,7 +617,7 @@ class _numeroState extends State<numero> {
                                 style: TextStyle(fontSize: 12),
                               ),
                               Text(
-                                "Setenta y cinco mil,\nciento ochenta y tres",
+                                "Setenta y cinco mil, ciento ochenta y tres",
                                 style: TextStyle(
                                   color: Color.fromRGBO(254, 102, 37, 1),
                                   fontSize: 12,
