@@ -1,7 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:elgood_de_mate/helpers/margenes.dart';
+import 'package:elgood_de_mate/test/test.dart';
 import 'package:flutter/material.dart';
+import 'test.dart';
 
 class numero extends StatefulWidget {
   @override
@@ -891,7 +893,10 @@ class _numeroState extends State<numero> {
                 alignment: Alignment.centerRight,
                 child: Container(
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => testList()));
+                    },
                     child: Text('Comprobar'),
                     style: ElevatedButton.styleFrom(
                       primary: Color.fromARGB(227, 75, 161, 65),
@@ -906,57 +911,4 @@ class _numeroState extends State<numero> {
       ),
     );
   }
-}
-
-List<Item> _listaDeItem = generateItemsList(10);
-
-class listaActividades extends StatefulWidget {
-  @override
-  State<listaActividades> createState() => _listaActividadesState();
-}
-
-class _listaActividadesState extends State<listaActividades> {
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return SingleChildScrollView(
-      child: Container(
-        child: _myWidgetExpansionPanel(),
-      ),
-    );
-  }
-
-  //Widget del expasionPanel
-  Widget _myWidgetExpansionPanel() {
-    return ExpansionPanelList(
-      expansionCallback: (int index, bool isExpanded) {
-        setState(() {
-          var _listaDeItems;
-          _listaDeItems[index].isExpanded = !isExpanded;
-        });
-      },
-      children: [],
-    );
-  }
-}
-
-//Info del expasionPanel
-
-//item
-class Item {
-  String expanded = '';
-  String title = '';
-  bool isExpanded = true;
-  Item({this.expanded = '', this.title = '', this.isExpanded = true});
-}
-
-//generador del item
-List<Item> generateItemsList(int sizeOfTheList) {
-  return List.generate(sizeOfTheList, (int index) {
-    return Item(
-      expanded: '$index',
-      title: 'Item $index',
-      isExpanded: false,
-    );
-  });
 }
