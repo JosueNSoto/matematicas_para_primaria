@@ -2,7 +2,7 @@ import 'package:elgood_de_mate/helpers/margenes.dart';
 import 'newLogIn.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'Eje1/act1_numero.dart';
+import 'Eje1/act1_numero_cincoCifras.dart';
 import 'Eje1/act2_sum_res.dart';
 import 'Eje1/act3_mult_div.dart';
 import 'Eje2/act1_ubi_espacial.dart';

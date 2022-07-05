@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:elgood_de_mate/helpers/margenes.dart';
-import 'package:elgood_de_mate/test/test.dart';
 import 'package:flutter/material.dart';
 import 'test.dart';
 
@@ -14,7 +13,6 @@ class _numeroState extends State<numero> {
   @override
   String titActividad1 = "Multiplicación y división";
   Widget build(BuildContext context) {
-    // TODO: implement build
     var aAct1_E1;
     return Scaffold(
       body: SingleChildScrollView(
@@ -640,248 +638,392 @@ class _numeroState extends State<numero> {
                     ),
                     Container(
                       child: Column(
-                        children: [],
-                      ),
-                    ),
-                    //Meter TODOS los containers en una lista para usar un colapse
-                    /*Container(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          //Inicio Actividad 1
                           Center(
-                            child: Text(
-                              "Actividad 1",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12,
+                            child: ElevatedButton(
+                              onPressed: () {
+                                showDialog(
+                                  context: context,
+                                  barrierDismissible: false,
+                                  builder: (context) => AlertDialog(
+                                    title: Text(
+                                      "Num Actividad",
+                                      style: TextStyle(fontSize: 20),
+                                    ),
+                                    content: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          '1. Ingrese la pregunta',
+                                          style: TextStyle(
+                                            fontSize: 15,
+                                            color:
+                                                Color.fromARGB(255, 30, 59, 92),
+                                          ),
+                                        ),
+                                        Text(
+                                          'Modifica esta parte para colocar la zona de respuesta',
+                                          style: TextStyle(
+                                            fontSize: 15,
+                                            color: Color.fromARGB(
+                                                255, 230, 177, 71),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    actions: <Widget>[
+                                      ElevatedButton(
+                                        onPressed: () {
+                                          Navigator.of(context).pop('validar');
+                                        },
+                                        child: Text(
+                                          "Validar respuesta",
+                                        ),
+                                        style: ElevatedButton.styleFrom(
+                                          primary:
+                                              Color.fromARGB(227, 75, 161, 65),
+                                        ),
+                                      ),
+                                      ElevatedButton(
+                                        onPressed: () {
+                                          Navigator.of(context).pop("cancelar");
+                                        },
+                                        child: Text("Cancelar"),
+                                        style: ElevatedButton.styleFrom(
+                                          primary:
+                                              Color.fromRGBO(211, 42, 24, 0.8),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ).then((result) {
+                                  print(result);
+                                });
+                              },
+                              child: Text(
+                                'Abrir actividad 1',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,
+                                    color: Colors.white),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                primary: Color.fromRGBO(54, 93, 137, 1),
                               ),
                             ),
                           ),
-                          SizedBox(height: 3),
-                          Text(
-                            "Desarrollo de la actividad 1",
-                            style: TextStyle(
-                              color: Color.fromARGB(255, 49, 95, 148),
-                            ),
-                          ),
-                          SizedBox(height: 3),
-                          Text(
-                            "Respuesta de la actividad 1",
-                            style: TextStyle(
-                              color: Color.fromARGB(255, 221, 169, 66),
-                            ),
-                          ),
-                          SizedBox(height: 3),
-                        ],
-                      ),
-                    ),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: Container(
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          child: Text(
-                            'Validar respuesta',
-                            style: TextStyle(fontSize: 12),
-                          ),
-                          style: ElevatedButton.styleFrom(
-                            primary: Color.fromARGB(227, 75, 161, 65),
-                          ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 12),
-                    //Actividad 2
-                    Container(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                          //Inicio Actividad 2
+                          SizedBox(height: 10),
                           Center(
-                            child: Text(
-                              "Actividad 2",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12,
+                            child: ElevatedButton(
+                              onPressed: () {
+                                showDialog(
+                                  context: context,
+                                  barrierDismissible: false,
+                                  builder: (context) => AlertDialog(
+                                    title: Text(
+                                      "Num Actividad",
+                                      style: TextStyle(fontSize: 20),
+                                    ),
+                                    content: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          '1. Ingrese la pregunta',
+                                          style: TextStyle(
+                                            fontSize: 15,
+                                            color:
+                                                Color.fromARGB(255, 30, 59, 92),
+                                          ),
+                                        ),
+                                        Text(
+                                          'Modifica esta parte para colocar la zona de respuesta',
+                                          style: TextStyle(
+                                            fontSize: 15,
+                                            color: Color.fromARGB(
+                                                255, 230, 177, 71),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    actions: <Widget>[
+                                      ElevatedButton(
+                                        onPressed: () {
+                                          Navigator.of(context).pop('validar');
+                                        },
+                                        child: Text(
+                                          "Validar respuesta",
+                                        ),
+                                        style: ElevatedButton.styleFrom(
+                                          primary:
+                                              Color.fromARGB(227, 75, 161, 65),
+                                        ),
+                                      ),
+                                      ElevatedButton(
+                                        onPressed: () {
+                                          Navigator.of(context).pop("cancelar");
+                                        },
+                                        child: Text("Cancelar"),
+                                        style: ElevatedButton.styleFrom(
+                                          primary:
+                                              Color.fromRGBO(211, 42, 24, 0.8),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ).then((result) {
+                                  print(result);
+                                });
+                              },
+                              child: Text(
+                                'Abrir actividad 1',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,
+                                    color: Colors.white),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                primary: Color.fromRGBO(54, 93, 137, 1),
                               ),
                             ),
                           ),
-                          SizedBox(height: 3),
-                          Text(
-                            "Desarrollo de la actividad 1",
-                            style: TextStyle(
-                              color: Color.fromARGB(255, 49, 95, 148),
-                            ),
-                          ),
-                          SizedBox(height: 3),
-                          Text(
-                            "Respuesta de la actividad 1",
-                            style: TextStyle(
-                              color: Color.fromARGB(255, 221, 169, 66),
-                            ),
-                          ),
-                          SizedBox(height: 3),
-                        ],
-                      ),
-                    ),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: Container(
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          child: Text(
-                            'Validar respuesta',
-                            style: TextStyle(fontSize: 12),
-                          ),
-                          style: ElevatedButton.styleFrom(
-                            primary: Color.fromARGB(227, 75, 161, 65),
-                          ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 12),
-                    //Actividad 3
-                    Container(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                          //Inicio actividad 3
+                          SizedBox(height: 10),
+
                           Center(
-                            child: Text(
-                              "Actividad 3",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12,
+                            child: ElevatedButton(
+                              onPressed: () {
+                                showDialog(
+                                  context: context,
+                                  barrierDismissible: false,
+                                  builder: (context) => AlertDialog(
+                                    title: Text(
+                                      "Num Actividad",
+                                      style: TextStyle(fontSize: 20),
+                                    ),
+                                    content: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          '1. Ingrese la pregunta',
+                                          style: TextStyle(
+                                            fontSize: 15,
+                                            color:
+                                                Color.fromARGB(255, 30, 59, 92),
+                                          ),
+                                        ),
+                                        Text(
+                                          'Modifica esta parte para colocar la zona de respuesta',
+                                          style: TextStyle(
+                                            fontSize: 15,
+                                            color: Color.fromARGB(
+                                                255, 230, 177, 71),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    actions: <Widget>[
+                                      ElevatedButton(
+                                        onPressed: () {
+                                          Navigator.of(context).pop('validar');
+                                        },
+                                        child: Text(
+                                          "Validar respuesta",
+                                        ),
+                                        style: ElevatedButton.styleFrom(
+                                          primary:
+                                              Color.fromARGB(227, 75, 161, 65),
+                                        ),
+                                      ),
+                                      ElevatedButton(
+                                        onPressed: () {
+                                          Navigator.of(context).pop("cancelar");
+                                        },
+                                        child: Text("Cancelar"),
+                                        style: ElevatedButton.styleFrom(
+                                          primary:
+                                              Color.fromRGBO(211, 42, 24, 0.8),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ).then((result) {
+                                  print(result);
+                                });
+                              },
+                              child: Text(
+                                'Abrir actividad 1',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,
+                                    color: Colors.white),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                primary: Color.fromRGBO(54, 93, 137, 1),
                               ),
                             ),
                           ),
-                          SizedBox(height: 3),
-                          Text(
-                            "Desarrollo de la actividad 1",
-                            style: TextStyle(
-                              color: Color.fromARGB(255, 49, 95, 148),
-                            ),
-                          ),
-                          SizedBox(height: 3),
-                          Text(
-                            "Respuesta de la actividad 1",
-                            style: TextStyle(
-                              color: Color.fromARGB(255, 221, 169, 66),
-                            ),
-                          ),
-                          SizedBox(height: 3),
-                        ],
-                      ),
-                    ),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: Container(
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          child: Text(
-                            'Validar respuesta',
-                            style: TextStyle(fontSize: 12),
-                          ),
-                          style: ElevatedButton.styleFrom(
-                            primary: Color.fromARGB(227, 75, 161, 65),
-                          ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 12),
-                    //Actividad 4
-                    Container(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                          //Inicio Actividad 4
+                          SizedBox(height: 10),
+
                           Center(
-                            child: Text(
-                              "Actividad 4",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12,
+                            child: ElevatedButton(
+                              onPressed: () {
+                                showDialog(
+                                  context: context,
+                                  barrierDismissible: false,
+                                  builder: (context) => AlertDialog(
+                                    title: Text(
+                                      "Num Actividad",
+                                      style: TextStyle(fontSize: 20),
+                                    ),
+                                    content: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          '1. Ingrese la pregunta',
+                                          style: TextStyle(
+                                            fontSize: 15,
+                                            color:
+                                                Color.fromARGB(255, 30, 59, 92),
+                                          ),
+                                        ),
+                                        Text(
+                                          'Modifica esta parte para colocar la zona de respuesta',
+                                          style: TextStyle(
+                                            fontSize: 15,
+                                            color: Color.fromARGB(
+                                                255, 230, 177, 71),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    actions: <Widget>[
+                                      ElevatedButton(
+                                        onPressed: () {
+                                          Navigator.of(context).pop('validar');
+                                        },
+                                        child: Text(
+                                          "Validar respuesta",
+                                        ),
+                                        style: ElevatedButton.styleFrom(
+                                          primary:
+                                              Color.fromARGB(227, 75, 161, 65),
+                                        ),
+                                      ),
+                                      ElevatedButton(
+                                        onPressed: () {
+                                          Navigator.of(context).pop("cancelar");
+                                        },
+                                        child: Text("Cancelar"),
+                                        style: ElevatedButton.styleFrom(
+                                          primary:
+                                              Color.fromRGBO(211, 42, 24, 0.8),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ).then((result) {
+                                  print(result);
+                                });
+                              },
+                              child: Text(
+                                'Abrir actividad 1',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,
+                                    color: Colors.white),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                primary: Color.fromRGBO(54, 93, 137, 1),
                               ),
                             ),
                           ),
-                          SizedBox(height: 3),
-                          Text(
-                            "Desarrollo de la actividad 1",
-                            style: TextStyle(
-                              color: Color.fromARGB(255, 49, 95, 148),
-                            ),
-                          ),
-                          SizedBox(height: 3),
-                          Text(
-                            "Respuesta de la actividad 1",
-                            style: TextStyle(
-                              color: Color.fromARGB(255, 221, 169, 66),
-                            ),
-                          ),
-                          SizedBox(height: 3),
-                        ],
-                      ),
-                    ),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: Container(
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          child: Text(
-                            'Validar respuesta',
-                            style: TextStyle(fontSize: 12),
-                          ),
-                          style: ElevatedButton.styleFrom(
-                            primary: Color.fromARGB(227, 75, 161, 65),
-                          ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 12),
-                    //Actividad 5
-                    Container(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                          //Inicio Actividad 5
+                          SizedBox(height: 10),
+
                           Center(
-                            child: Text(
-                              "Actividad 5",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12,
+                            child: ElevatedButton(
+                              onPressed: () {
+                                showDialog(
+                                  context: context,
+                                  barrierDismissible: false,
+                                  builder: (context) => AlertDialog(
+                                    title: Text(
+                                      "Num Actividad",
+                                      style: TextStyle(fontSize: 20),
+                                    ),
+                                    content: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          '1. Ingrese la pregunta',
+                                          style: TextStyle(
+                                            fontSize: 15,
+                                            color:
+                                                Color.fromARGB(255, 30, 59, 92),
+                                          ),
+                                        ),
+                                        Text(
+                                          'Modifica esta parte para colocar la zona de respuesta',
+                                          style: TextStyle(
+                                            fontSize: 15,
+                                            color: Color.fromARGB(
+                                                255, 230, 177, 71),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    actions: <Widget>[
+                                      ElevatedButton(
+                                        onPressed: () {
+                                          Navigator.of(context).pop('validar');
+                                        },
+                                        child: Text(
+                                          "Validar respuesta",
+                                        ),
+                                        style: ElevatedButton.styleFrom(
+                                          primary:
+                                              Color.fromARGB(227, 75, 161, 65),
+                                        ),
+                                      ),
+                                      ElevatedButton(
+                                        onPressed: () {
+                                          Navigator.of(context).pop("cancelar");
+                                        },
+                                        child: Text("Cancelar"),
+                                        style: ElevatedButton.styleFrom(
+                                          primary:
+                                              Color.fromRGBO(211, 42, 24, 0.8),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ).then((result) {
+                                  print(result);
+                                });
+                              },
+                              child: Text(
+                                'Abrir actividad 1',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,
+                                    color: Colors.white),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                primary: Color.fromRGBO(54, 93, 137, 1),
                               ),
                             ),
                           ),
-                          SizedBox(height: 3),
-                          Text(
-                            "Desarrollo de la actividad 1",
-                            style: TextStyle(
-                              color: Color.fromARGB(255, 49, 95, 148),
-                            ),
-                          ),
-                          SizedBox(height: 3),
-                          Text(
-                            "Respuesta de la actividad 1",
-                            style: TextStyle(
-                              color: Color.fromARGB(255, 221, 169, 66),
-                            ),
-                          ),
-                          SizedBox(height: 3),
                         ],
                       ),
                     ),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: Container(
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          child: Text(
-                            'Validar respuesta',
-                            style: TextStyle(fontSize: 12),
-                          ),
-                          style: ElevatedButton.styleFrom(
-                            primary: Color.fromARGB(227, 75, 161, 65),
-                          ),
-                        ),
-                      ),
-                    ),*/
                   ],
                 ),
               ),
@@ -894,10 +1036,14 @@ class _numeroState extends State<numero> {
                 child: Container(
                   child: ElevatedButton(
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => testList()));
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => testList(),
+                        ),
+                      );
                     },
-                    child: Text('Comprobar'),
+                    child: Text('Siguiente Tema'),
                     style: ElevatedButton.styleFrom(
                       primary: Color.fromARGB(227, 75, 161, 65),
                     ),
