@@ -53,7 +53,7 @@ class _sum_resState extends State<sum_res> {
                   //border: Border.all(color: Colors.amber),
                   color: Color.fromRGBO(54, 93, 137, 0.1),
                 ),
-                width: 1000,
+                width: 2000,
                 //Inicio del cuadro de actividades
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -65,6 +65,7 @@ class _sum_resState extends State<sum_res> {
                         fontSize: 15,
                       ),
                     ),
+                    SizedBox(height: 10),
                     Container(
                       child: Column(
                         children: [

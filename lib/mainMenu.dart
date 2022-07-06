@@ -1,14 +1,14 @@
+import 'package:elgood_de_mate/Eje1/Act3_MultDivision/3.1_multDivision.dart';
+import 'package:elgood_de_mate/Eje2/Act3_MagnitudesMedidas/3.1_milimetro.dart';
+import 'Eje1/Act1_Numero/1.1_cincoCifras.dart';
+import 'Eje1/Act2_AdicionSustraccion/2.1_adicionSust.dart';
+import 'Eje2/Act1_ubicacionEspacial.dart';
+import 'Eje2/Act2_FigurasCuerposGeometricos/2.1_cuadrilatero.dart';
 import 'package:elgood_de_mate/helpers/margenes.dart';
 import 'newLogIn.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'Eje1/act1_numero_cincoCifras.dart';
-import 'Eje1/act2_sum_res.dart';
-import 'Eje1/act3_mult_div.dart';
-import 'Eje2/act1_ubi_espacial.dart';
-import 'Eje2/act2_figuras.dart';
-import 'Eje2/act3_cuerpos_geo.dart';
-import 'Eje3/act1_estadistica.dart';
+import 'Eje3/Act1_Estadistica.dart';
 
 class mainMenu extends StatefulWidget {
   @override
