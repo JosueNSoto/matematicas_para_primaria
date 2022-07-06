@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:elgood_de_mate/Eje1/Act1_Numero/1.2_mayorMenorQue.dart';
 import 'package:elgood_de_mate/helpers/margenes.dart';
 import 'package:flutter/material.dart';
 import '../test.dart';
@@ -32,7 +33,7 @@ class _numeroState extends State<numero> {
                     style: TextStyle(fontSize: 12),
                   ),
                   Text(
-                    "Múltiplicación y divisón",
+                    "Número",
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Color.fromARGB(255, 30, 59, 92),
@@ -1039,7 +1040,7 @@ class _numeroState extends State<numero> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => testList(),
+                          builder: (context) => mayorMenorQue(),
                         ),
                       );
                     },

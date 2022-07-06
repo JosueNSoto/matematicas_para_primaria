@@ -1,5 +1,6 @@
 import 'package:elgood_de_mate/helpers/margenes.dart';
 import 'package:flutter/material.dart';
+import '2.2_operacionMental.dart';
 
 class sum_res extends StatefulWidget {
   @override
@@ -499,7 +500,14 @@ class _sum_resState extends State<sum_res> {
                 alignment: Alignment.centerRight,
                 child: Container(
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => operacionMental(),
+                        ),
+                      );
+                    },
                     child: Text(
                       'Siguiente tema',
                       style: TextStyle(fontSize: 12),
