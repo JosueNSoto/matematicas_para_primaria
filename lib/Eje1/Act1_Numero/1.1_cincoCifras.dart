@@ -648,7 +648,7 @@ class _numeroState extends State<numero> {
                                   barrierDismissible: false,
                                   builder: (context) => AlertDialog(
                                     title: Text(
-                                      "Num Actividad",
+                                      "Actividad 1",
                                       style: TextStyle(fontSize: 20),
                                     ),
                                     content: Column(
@@ -724,7 +724,7 @@ class _numeroState extends State<numero> {
                                   barrierDismissible: false,
                                   builder: (context) => AlertDialog(
                                     title: Text(
-                                      "Num Actividad",
+                                      "Actividad 2",
                                       style: TextStyle(fontSize: 20),
                                     ),
                                     content: Column(
@@ -779,7 +779,7 @@ class _numeroState extends State<numero> {
                                 });
                               },
                               child: Text(
-                                'Abrir actividad 1',
+                                'Abrir actividad 2',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 12,
@@ -801,7 +801,7 @@ class _numeroState extends State<numero> {
                                   barrierDismissible: false,
                                   builder: (context) => AlertDialog(
                                     title: Text(
-                                      "Num Actividad",
+                                      "Actividad 3",
                                       style: TextStyle(fontSize: 20),
                                     ),
                                     content: Column(
@@ -856,7 +856,7 @@ class _numeroState extends State<numero> {
                                 });
                               },
                               child: Text(
-                                'Abrir actividad 1',
+                                'Abrir actividad 3',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 12,
@@ -878,7 +878,7 @@ class _numeroState extends State<numero> {
                                   barrierDismissible: false,
                                   builder: (context) => AlertDialog(
                                     title: Text(
-                                      "Num Actividad",
+                                      "Actividad 4",
                                       style: TextStyle(fontSize: 20),
                                     ),
                                     content: Column(
@@ -933,7 +933,7 @@ class _numeroState extends State<numero> {
                                 });
                               },
                               child: Text(
-                                'Abrir actividad 1',
+                                'Abrir actividad 4',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 12,
@@ -955,7 +955,7 @@ class _numeroState extends State<numero> {
                                   barrierDismissible: false,
                                   builder: (context) => AlertDialog(
                                     title: Text(
-                                      "Num Actividad",
+                                      "Actividad 5",
                                       style: TextStyle(fontSize: 20),
                                     ),
                                     content: Column(
@@ -1010,7 +1010,7 @@ class _numeroState extends State<numero> {
                                 });
                               },
                               child: Text(
-                                'Abrir actividad 1',
+                                'Abrir actividad 5',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 12,
