@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:elgood_de_mate/helpers/margenes.dart';
+import '3.3_gramo.dart';
 
-class cuerposGeo extends StatefulWidget {
+class milimetro extends StatefulWidget {
   @override
-  State<cuerposGeo> createState() => _cuerposGeoState();
+  State<milimetro> createState() => _milimetroState();
 }
 
-class _cuerposGeoState extends State<cuerposGeo> {
+class _milimetroState extends State<milimetro> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    var aAct3_E2;
+    var aAct3_E1;
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
@@ -18,7 +19,7 @@ class _cuerposGeoState extends State<cuerposGeo> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              margenSup_Actividades(context, aAct3_E2),
+              margenSup_Actividades(context, aAct3_E1),
               SizedBox(height: 5),
               Row(
                 // ignore: prefer_const_literals_to_create_immutables
@@ -28,7 +29,7 @@ class _cuerposGeoState extends State<cuerposGeo> {
                     style: TextStyle(fontSize: 12),
                   ),
                   Text(
-                    "Cuerpos geométricos",
+                    "Magnitudes y medidas",
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Color.fromARGB(255, 30, 59, 92),
@@ -37,7 +38,7 @@ class _cuerposGeoState extends State<cuerposGeo> {
                 ],
               ),
               Text(
-                "> InsertarTema",
+                "> Milímetros",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Color.fromARGB(255, 30, 59, 92),
@@ -497,7 +498,14 @@ class _cuerposGeoState extends State<cuerposGeo> {
                 alignment: Alignment.centerRight,
                 child: Container(
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => gramo(),
+                        ),
+                      );
+                    },
                     child: Text(
                       'Siguiente tema',
                       style: TextStyle(fontSize: 12),

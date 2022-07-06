@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:elgood_de_mate/helpers/margenes.dart';
+import 'package:elgood_de_mate/mainMenu.dart';
 
 class estadistica extends StatelessWidget {
   @override
@@ -32,7 +33,7 @@ class estadistica extends StatelessWidget {
                 ],
               ),
               Text(
-                "> InsertarTema",
+                "> Recolección y orden de datos",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Color.fromARGB(255, 30, 59, 92),
@@ -492,9 +493,16 @@ class estadistica extends StatelessWidget {
                 alignment: Alignment.centerRight,
                 child: Container(
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => mainMenu(),
+                        ),
+                      );
+                    },
                     child: Text(
-                      'Siguiente tema',
+                      'Finalizar tema',
                       style: TextStyle(fontSize: 12),
                     ),
                     style: ElevatedButton.styleFrom(

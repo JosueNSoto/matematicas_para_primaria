@@ -10,7 +10,7 @@ class _multi_divState extends State<multi_div> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    var aAct3_E1;
+    var aAct1_E3;
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
@@ -19,7 +19,7 @@ class _multi_divState extends State<multi_div> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               //Margen Superior
-              margenSup_Actividades(context, aAct3_E1),
+              margenSup_Actividades(context, aAct1_E3),
               SizedBox(height: 5),
               Row(
                 children: [
@@ -28,7 +28,7 @@ class _multi_divState extends State<multi_div> {
                     style: TextStyle(fontSize: 12),
                   ),
                   Text(
-                    "Múltiplicación y divisón",
+                    "Multiplicación y divisón",
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Color.fromARGB(255, 30, 59, 92),
@@ -37,7 +37,7 @@ class _multi_divState extends State<multi_div> {
                 ],
               ),
               Text(
-                "> Inserte tema",
+                "> Repaso de multiplicación y división",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Color.fromARGB(255, 30, 59, 92),

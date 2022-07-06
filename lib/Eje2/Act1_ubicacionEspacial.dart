@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
 
+import 'package:elgood_de_mate/mainMenu.dart';
 import 'package:flutter/material.dart';
 import 'package:elgood_de_mate/helpers/margenes.dart';
 
@@ -39,7 +40,7 @@ class _ubiEspacialState extends State<ubiEspacial> {
                 ],
               ),
               Text(
-                "> InsertarTema",
+                "> Representación y descripción",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Color.fromARGB(255, 30, 59, 92),
@@ -499,9 +500,16 @@ class _ubiEspacialState extends State<ubiEspacial> {
                 alignment: Alignment.centerRight,
                 child: Container(
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => mainMenu(),
+                        ),
+                      );
+                    },
                     child: Text(
-                      'Siguiente tema',
+                      'Finalizar tema',
                       style: TextStyle(fontSize: 12),
                     ),
                     style: ElevatedButton.styleFrom(

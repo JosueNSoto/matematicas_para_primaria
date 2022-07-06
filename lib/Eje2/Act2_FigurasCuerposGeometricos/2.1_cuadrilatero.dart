@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:elgood_de_mate/helpers/margenes.dart';
+import '2.2_rectasParalelasPerpendi.dart';
 
 class figuras extends StatefulWidget {
   @override
@@ -37,7 +38,7 @@ class _figurasState extends State<figuras> {
                 ],
               ),
               Text(
-                "> InsertarTema",
+                "> Cuadrilátero",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Color.fromARGB(255, 30, 59, 92),
@@ -497,7 +498,14 @@ class _figurasState extends State<figuras> {
                 alignment: Alignment.centerRight,
                 child: Container(
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => rectasParalelasPerpen(),
+                        ),
+                      );
+                    },
                     child: Text(
                       'Siguiente tema',
                       style: TextStyle(fontSize: 12),
