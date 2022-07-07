@@ -57,43 +57,6 @@ class _sumaRestFraccionesState extends State<sumaRestFracciones> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      "Repaso",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 15,
-                      ),
-                    ),
-                    SizedBox(height: 10),
-                    Container(
-                      child: Column(
-                        children: [
-                          Text(
-                            "Texto de descripción",
-                            style: TextStyle(
-                              color: Color.fromRGBO(254, 102, 37, 1),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(height: 10),
-                    Text(
-                      "Ejemplos",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 15,
-                      ),
-                    ),
-                    SizedBox(height: 10),
-                    Container(
-                      child: Text(
-                        "Imágenes de Ejemplo",
-                        style: TextStyle(
-                          color: Color.fromRGBO(254, 102, 37, 1),
-                        ),
-                      ),
-                    ),
                     SizedBox(height: 10),
                     Text(
                       "Actividades",
@@ -507,7 +470,7 @@ class _sumaRestFraccionesState extends State<sumaRestFracciones> {
                       );
                     },
                     child: Text(
-                      'Siguiente tema',
+                      'Finalizar tema',
                       style: TextStyle(fontSize: 12),
                     ),
                     style: ElevatedButton.styleFrom(
