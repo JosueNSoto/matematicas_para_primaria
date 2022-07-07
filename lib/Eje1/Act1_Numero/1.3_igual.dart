@@ -68,10 +68,31 @@ class _igualQueState extends State<igualQue> {
                     Container(
                       child: Column(
                         children: [
-                          Text(
-                            "Texto de descripción",
-                            style: TextStyle(
-                              color: Color.fromRGBO(254, 102, 37, 1),
+                          RichText(
+                            text: TextSpan(
+                              style: TextStyle(
+                                color: Color.fromARGB(255, 0, 0, 0),
+                              ),
+                              children: [
+                                TextSpan(text: 'Identificar el signo "'),
+                                TextSpan(
+                                  text: '=',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 15,
+                                    color: Color.fromRGBO(254, 102, 37, 1),
+                                  ),
+                                ),
+                                TextSpan(text: '" que significa "'),
+                                TextSpan(
+                                  text: 'igual',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromRGBO(254, 102, 37, 1),
+                                  ),
+                                ),
+                                TextSpan(text: '".'),
+                              ],
                             ),
                           ),
                         ],
@@ -87,12 +108,162 @@ class _igualQueState extends State<igualQue> {
                     ),
                     SizedBox(height: 10),
                     Container(
-                      child: Text(
-                        "Imágenes de Ejemplo",
-                        style: TextStyle(
-                          color: Color.fromRGBO(254, 102, 37, 1),
-                        ),
+                      child: Column(
+                        children: [
+                          Container(
+                            child: Column(
+                              children: [
+                                Container(
+                                  child: Center(
+                                    child: Image(
+                                      image: AssetImage(
+                                          "assets/img/BalonIgual2.png"),
+                                      height: 150,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(height: 5),
+                                RichText(
+                                  text: TextSpan(
+                                    style: TextStyle(
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                    children: [
+                                      TextSpan(
+                                          text: "El balón de la izquierda es "),
+                                      TextSpan(
+                                        text: 'igual que',
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color:
+                                              Color.fromRGBO(254, 102, 37, 1),
+                                        ),
+                                      ),
+                                      TextSpan(text: " el balón de la derecha"),
+                                    ],
+                                  ),
+                                ),
+                                SizedBox(height: 10),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
+                    ),
+                    Text('Pasa lo mismo con los números:'),
+                    SizedBox(height: 15),
+                    Column(
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 0, 0, 0),
+                            ),
+                            children: [
+                              TextSpan(text: '     1.   10'),
+                              TextSpan(
+                                text: ' = ',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Color.fromRGBO(254, 102, 37, 1),
+                                ),
+                              ),
+                              TextSpan(text: '10'),
+                              TextSpan(text: '\n     El número 10 '),
+                              TextSpan(
+                                text: 'es igual ',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Color.fromRGBO(254, 102, 37, 1),
+                                ),
+                              ),
+                              TextSpan(text: 'al número 10\n'),
+                              TextSpan(text: '     2.   300'),
+                              TextSpan(
+                                text: ' = ',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Color.fromRGBO(254, 102, 37, 1),
+                                ),
+                              ),
+                              TextSpan(text: '300'),
+                              TextSpan(text: '\n     El número 300 '),
+                              TextSpan(
+                                text: 'es igual ',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Color.fromRGBO(254, 102, 37, 1),
+                                ),
+                              ),
+                              TextSpan(text: 'al número 300\n'),
+                              TextSpan(text: '     3.   2,500'),
+                              TextSpan(
+                                text: ' = ',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Color.fromRGBO(254, 102, 37, 1),
+                                ),
+                              ),
+                              TextSpan(text: '2,500'),
+                              TextSpan(text: '\n     El número 2,500 '),
+                              TextSpan(
+                                text: 'es igual ',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Color.fromRGBO(254, 102, 37, 1),
+                                ),
+                              ),
+                              TextSpan(text: 'al número 2,500\n'),
+                              TextSpan(text: '     4.   9,999'),
+                              TextSpan(
+                                text: ' = ',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Color.fromRGBO(254, 102, 37, 1),
+                                ),
+                              ),
+                              TextSpan(text: '9,999'),
+                              TextSpan(text: '\n     El número 9,999 '),
+                              TextSpan(
+                                text: 'es igual ',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Color.fromRGBO(254, 102, 37, 1),
+                                ),
+                              ),
+                              TextSpan(text: 'al número 9,999\n'),
+                              TextSpan(text: '     5.   1'),
+                              TextSpan(
+                                text: ' = ',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Color.fromRGBO(254, 102, 37, 1),
+                                ),
+                              ),
+                              TextSpan(text: '1'),
+                              TextSpan(text: '\n     El número 1 '),
+                              TextSpan(
+                                text: 'es igual ',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Color.fromRGBO(254, 102, 37, 1),
+                                ),
+                              ),
+                              TextSpan(text: 'al número 1'),
+                            ],
+                          ),
+                        ),
+                      ],
                     ),
                     SizedBox(height: 10),
                     Text(
