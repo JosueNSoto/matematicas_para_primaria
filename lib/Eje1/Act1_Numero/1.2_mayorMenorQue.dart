@@ -68,11 +68,57 @@ class _mayorMenorQueState extends State<mayorMenorQue> {
                     Container(
                       child: Column(
                         children: [
-                          Text(
-                            "Texto de descripción",
-                            style: TextStyle(
-                              color: Color.fromRGBO(254, 102, 37, 1),
-                            ),
+                          RichText(
+                            text: TextSpan(
+                                style: TextStyle(
+                                  color: Color.fromRGBO(254, 102, 37, 1),
+                                ),
+                                children: [
+                                  TextSpan(text: 'Identificar los signos "'),
+                                  TextSpan(
+                                    text: '>',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15,
+                                    ),
+                                  ),
+                                  TextSpan(text: '" y "'),
+                                  TextSpan(
+                                    text: '<',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15,
+                                    ),
+                                  ),
+                                  TextSpan(text: '"; que numeros es '),
+                                  TextSpan(
+                                    text: 'mayor que',
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
+                                  ),
+                                  TextSpan(text: ' y '),
+                                  TextSpan(
+                                    text: 'menor que:',
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
+                                  ),
+                                  TextSpan(
+                                      text:
+                                          '\n     •   El simbolo ">" significa '),
+                                  TextSpan(
+                                    text: 'mayor que',
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
+                                  ),
+                                  TextSpan(
+                                      text:
+                                          '\n     •   El simbolo "<" significa '),
+                                  TextSpan(
+                                    text: 'menor que',
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
+                                  ),
+                                ]),
                           ),
                         ],
                       ),
@@ -87,11 +133,66 @@ class _mayorMenorQueState extends State<mayorMenorQue> {
                     ),
                     SizedBox(height: 10),
                     Container(
-                      child: Text(
-                        "Imágenes de Ejemplo",
-                        style: TextStyle(
-                          color: Color.fromRGBO(254, 102, 37, 1),
-                        ),
+                      child: Column(
+                        children: [
+                          Container(
+                            child: Column(
+                              children: [
+                                Image(
+                                  image:
+                                      AssetImage("assets/img/SolMayorQue.png"),
+                                  height: 150,
+                                ),
+                                SizedBox(height: 5),
+                                RichText(
+                                  text: TextSpan(
+                                      style: TextStyle(
+                                        color: Color.fromRGBO(254, 102, 37, 1),
+                                      ),
+                                      children: [
+                                        TextSpan(text: "El sol es "),
+                                        TextSpan(
+                                          text: 'mayor que',
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        TextSpan(text: " la luna"),
+                                      ]),
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 10),
+                          Container(
+                            child: Column(
+                              children: [
+                                Center(
+                                  child: Image(
+                                    image: AssetImage(
+                                        "assets/img/LunaMenorQue.png"),
+                                    height: 150,
+                                  ),
+                                ),
+                                SizedBox(height: 5),
+                                RichText(
+                                  text: TextSpan(
+                                      style: TextStyle(
+                                        color: Color.fromRGBO(254, 102, 37, 1),
+                                      ),
+                                      children: [
+                                        TextSpan(text: "La luna es "),
+                                        TextSpan(
+                                          text: 'menor que',
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        TextSpan(text: " el sol"),
+                                      ]),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(height: 10),
