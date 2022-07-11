@@ -1,4 +1,5 @@
 import 'package:elgood_de_mate/helpers/margenes.dart';
+import 'package:elgood_de_mate/mainMenu.dart';
 import 'package:flutter/material.dart';
 
 class multi_div extends StatefulWidget {
@@ -9,7 +10,6 @@ class multi_div extends StatefulWidget {
 class _multi_divState extends State<multi_div> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     var aAct1_E3;
     return Scaffold(
       body: SingleChildScrollView(
@@ -460,9 +460,16 @@ class _multi_divState extends State<multi_div> {
                 alignment: Alignment.centerRight,
                 child: Container(
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => mainMenu(),
+                        ),
+                      );
+                    },
                     child: Text(
-                      'Siguiente tema',
+                      'Finalizar tema',
                       style: TextStyle(fontSize: 12),
                     ),
                     style: ElevatedButton.styleFrom(

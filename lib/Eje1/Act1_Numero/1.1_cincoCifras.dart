@@ -3,7 +3,6 @@
 import 'package:elgood_de_mate/Eje1/Act1_Numero/1.2_mayorMenorQue.dart';
 import 'package:elgood_de_mate/helpers/margenes.dart';
 import 'package:flutter/material.dart';
-import '../test.dart';
 
 class numero extends StatefulWidget {
   @override

@@ -12,7 +12,6 @@ class ubiEspacial extends StatefulWidget {
 class _ubiEspacialState extends State<ubiEspacial> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     var aAct1_E2;
     return Scaffold(
       body: SingleChildScrollView(
@@ -70,10 +69,147 @@ class _ubiEspacialState extends State<ubiEspacial> {
                     Container(
                       child: Column(
                         children: [
-                          Text(
-                            "Texto de descripción",
-                            style: TextStyle(
-                              color: Color.fromRGBO(254, 102, 37, 1),
+                          RichText(
+                            text: TextSpan(
+                              style: TextStyle(
+                                color: Color.fromARGB(255, 0, 0, 0),
+                              ),
+                              children: [
+                                TextSpan(
+                                    text: 'A continuación, se presenta un '),
+                                TextSpan(
+                                  text: 'mapa ',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromRGBO(254, 102, 37, 1),
+                                  ),
+                                ),
+                                TextSpan(
+                                    text:
+                                        'de una comunidad en el Estado de México, con unos lugares importantes o destinos a los cuales ir.'),
+                                TextSpan(
+                                  text:
+                                      '\n     •   Puntos cardinales en un mapa\n',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromRGBO(254, 102, 37, 1),
+                                  ),
+                                ),
+                                TextSpan(text: '          •   El'),
+                                TextSpan(
+                                  text: ' Norte ',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromRGBO(254, 102, 37, 1),
+                                  ),
+                                ),
+                                TextSpan(text: 'siempre apuntará hacia arriba'),
+                                TextSpan(text: '\n          •   El'),
+                                TextSpan(
+                                  text: ' Este ',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromRGBO(254, 102, 37, 1),
+                                  ),
+                                ),
+                                TextSpan(
+                                    text: 'siempre apuntará hacia la derecha'),
+                                TextSpan(
+                                  text:
+                                      '\n     •   Puntos cardinales en la vida real \n',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromRGBO(254, 102, 37, 1),
+                                  ),
+                                ),
+                                TextSpan(text: '          •   El'),
+                                TextSpan(
+                                  text: ' Este ',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromRGBO(254, 102, 37, 1),
+                                  ),
+                                ),
+                                TextSpan(
+                                    text:
+                                        'está en la dirección por donde sale el Sol'),
+                                TextSpan(
+                                    text: '\n          •   Para ubicar el'),
+                                TextSpan(
+                                  text: ' Norte ',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromRGBO(254, 102, 37, 1),
+                                  ),
+                                ),
+                                TextSpan(
+                                    text:
+                                        ', debes colocar tu brazo derecho apuntando hacia el'),
+                                TextSpan(
+                                  text: ' Este ',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromRGBO(254, 102, 37, 1),
+                                  ),
+                                ),
+                                TextSpan(text: 'y el'),
+                                TextSpan(
+                                  text: ' Norte ',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromRGBO(254, 102, 37, 1),
+                                  ),
+                                ),
+                                TextSpan(text: 'se encontrará frente a ti'),
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 10),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Column(
+                        children: [
+                          Center(
+                            child: InteractiveViewer(
+                              child: Container(
+                                child: Column(
+                                  children: [
+                                    Image(
+                                      image: AssetImage(
+                                          "assets/img/ciudadCardinal.png"),
+                                      height: 200,
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(height: 10),
+                          RichText(
+                            text: TextSpan(
+                              style: TextStyle(
+                                color: Color.fromARGB(255, 0, 0, 0),
+                              ),
+                              children: [
+                                TextSpan(
+                                  text: "NOTAS:",
+                                  style: TextStyle(
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 11,
+                                  ),
+                                ),
+                                TextSpan(
+                                  text:
+                                      ' Recuerda utilizar todos los objetos posibles para detallar la dirección y las indicaciones para que sea más claro el trayecto. \nEn caso de necesitar ayuda, puedes utilizar Google Maps o Waze.\nPuedes hacer zoom a las imágenes.',
+                                  style: TextStyle(
+                                    fontStyle: FontStyle.italic,
+                                    fontSize: 10,
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ],
@@ -89,11 +225,214 @@ class _ubiEspacialState extends State<ubiEspacial> {
                     ),
                     SizedBox(height: 10),
                     Container(
-                      child: Text(
-                        "Imágenes de Ejemplo",
-                        style: TextStyle(
-                          color: Color.fromRGBO(254, 102, 37, 1),
-                        ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "1.   Saúl quiere ir a la fiesta de su mejor amigo, que vive en la Unidad habitacional, Edificio A. Coloca las indicaciones de la manera más detallada. La casa de Saúl es de color rosa.",
+                          ),
+                          SizedBox(height: 5),
+                          RichText(
+                            text: TextSpan(
+                              style: TextStyle(
+                                color: Color.fromARGB(255, 0, 0, 0),
+                              ),
+                              children: [
+                                TextSpan(
+                                  text: 'Indicaciones:',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromRGBO(254, 102, 37, 1),
+                                  ),
+                                ),
+                                TextSpan(
+                                  text: ' Dirigirse hacia el',
+                                ),
+                                TextSpan(
+                                  text: ' Norte',
+                                  style: TextStyle(
+                                      color: Color.fromRGBO(254, 102, 37, 1),
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                TextSpan(
+                                  text: ', sobre la',
+                                ),
+                                TextSpan(
+                                  text: ' CALLE OBREGÓN ',
+                                  style: TextStyle(
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                TextSpan(
+                                  text:
+                                      'y utilizar el cruce peatonal que se encuentra frente a la escuela, caminar sobre la acera que está frente a la escuela, en dirección al ',
+                                ),
+                                TextSpan(
+                                  text: 'Sur',
+                                  style: TextStyle(
+                                      color: Color.fromRGBO(254, 102, 37, 1),
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                TextSpan(
+                                  text:
+                                      ', pasará frente al Parque, una vez llegado al final del Parque, irá en dirección',
+                                ),
+                                TextSpan(
+                                  text: ' Norte',
+                                  style: TextStyle(
+                                      color: Color.fromRGBO(254, 102, 37, 1),
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                TextSpan(
+                                  text: ', sobre la',
+                                ),
+                                TextSpan(
+                                  text: ' CALLE ZARAGOZA',
+                                  style: TextStyle(
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                TextSpan(
+                                  text:
+                                      ', buscando el siguiente paso peatonal, cruzar el paso peatonal sobre la ',
+                                ),
+                                TextSpan(
+                                  text: 'CALLE ZARAGOZA',
+                                  style: TextStyle(
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                TextSpan(
+                                  text: ' y de frente estará el Edificio A.',
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 10),
+                          Container(
+                            child: Column(
+                              children: [
+                                Center(
+                                  child: InteractiveViewer(
+                                    child: Container(
+                                      child: Column(
+                                        children: [
+                                          Image(
+                                            image: AssetImage(
+                                                "assets/img/ciudadCardinalEj1.png"),
+                                            height: 200,
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(height: 10),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Container(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "2.   Ayda necesita ir a la parada de Taxis, sobre la AVENIDA REFORMA. Coloca las indicaciones de la manera más detallada. La casa de Ayda está en el Noreste, de color blanca.",
+                          ),
+                          SizedBox(height: 5),
+                          RichText(
+                            text: TextSpan(
+                              style: TextStyle(
+                                color: Color.fromARGB(255, 0, 0, 0),
+                              ),
+                              children: [
+                                TextSpan(
+                                  text: 'Indicaciones:',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromRGBO(254, 102, 37, 1),
+                                  ),
+                                ),
+                                TextSpan(
+                                  text: ' Dirigirse hacia el',
+                                ),
+                                TextSpan(
+                                  text: ' Sur',
+                                  style: TextStyle(
+                                      color: Color.fromRGBO(254, 102, 37, 1),
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                TextSpan(
+                                  text: ', sobre la',
+                                ),
+                                TextSpan(
+                                  text: ' CALLE OBREGÓN',
+                                  style: TextStyle(
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                TextSpan(
+                                  text:
+                                      ', hasta llegar a la tortilleria de la esquina. Utilizar el paso peatonal en dirección',
+                                ),
+                                TextSpan(
+                                  text: ' Oeste',
+                                  style: TextStyle(
+                                      color: Color.fromRGBO(254, 102, 37, 1),
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                TextSpan(
+                                  text: ', para ir sobre la ',
+                                ),
+                                TextSpan(
+                                  text: ' CALLE VICTORIA',
+                                  style: TextStyle(
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                TextSpan(
+                                  text:
+                                      ', seguir todo derecho hasta llegar a la ',
+                                ),
+                                TextSpan(
+                                  text: 'AVENIDA REFORMA',
+                                  style: TextStyle(
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                TextSpan(
+                                  text: ', de frente estará la base de taxis.',
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 10),
+                          Container(
+                            child: Column(
+                              children: [
+                                Center(
+                                  child: InteractiveViewer(
+                                    child: Container(
+                                      child: Column(
+                                        children: [
+                                          Image(
+                                            image: AssetImage(
+                                                "assets/img/ciudadCardinalEj2.png"),
+                                            height: 200,
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(height: 10),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(height: 10),

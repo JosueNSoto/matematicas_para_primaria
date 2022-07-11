@@ -1,4 +1,4 @@
-import 'package:elgood_de_mate/Eje1/Act3_MultDivision/3.1_multDivision.dart';
+import 'Eje1/Act3_MultDivision/3.1_multDivision.dart';
 import 'package:elgood_de_mate/Eje2/Act3_MagnitudesMedidas/3.1_milimetro.dart';
 import 'Eje1/Act1_Numero/1.1_cincoCifras.dart';
 import 'Eje1/Act2_AdicionSustraccion/2.1_adicionSust.dart';
