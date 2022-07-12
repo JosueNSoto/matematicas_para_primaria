@@ -65,16 +65,88 @@ class _rectasParalelasPerpenState extends State<rectasParalelasPerpen> {
                       ),
                     ),
                     SizedBox(height: 10),
-                    Container(
-                      child: Column(
-                        children: [
-                          Text(
-                            "Texto de descripción",
-                            style: TextStyle(
-                              color: Color.fromRGBO(254, 102, 37, 1),
+                    Center(
+                      child: Container(
+                        child: Column(
+                          children: [
+                            RichText(
+                              text: TextSpan(
+                                style: TextStyle(
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text: "Principales características:\n",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  TextSpan(
+                                    text:
+                                        '     Rectas paralelas o paralelos \n',
+                                    style: TextStyle(),
+                                  ),
+                                  TextSpan(
+                                    text: "     •   Aquellas líneas que ",
+                                    style:
+                                        TextStyle(fontStyle: FontStyle.italic),
+                                  ),
+                                  TextSpan(
+                                    text: "nunca ",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontStyle: FontStyle.italic),
+                                  ),
+                                  TextSpan(
+                                    text: "se cruzan",
+                                    style:
+                                        TextStyle(fontStyle: FontStyle.italic),
+                                  ),
+                                ],
+                              ),
                             ),
-                          ),
-                        ],
+                            SizedBox(height: 5),
+                            Image(
+                              image: AssetImage("assets/img/lineaPara.png"),
+                              height: 200,
+                            ),
+                            SizedBox(height: 10),
+                            RichText(
+                              text: TextSpan(
+                                style: TextStyle(
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text: '     Rectas perpendiculares \n',
+                                    style: TextStyle(),
+                                  ),
+                                  TextSpan(
+                                    text: "     •   Aquellas líneas que ",
+                                    style:
+                                        TextStyle(fontStyle: FontStyle.italic),
+                                  ),
+                                  TextSpan(
+                                    text: "en algún punto ",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontStyle: FontStyle.italic),
+                                  ),
+                                  TextSpan(
+                                    text: "se cruzan",
+                                    style:
+                                        TextStyle(fontStyle: FontStyle.italic),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 5),
+                            Image(
+                              image: AssetImage("assets/img/lineaPerpen.png"),
+                              height: 200,
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                     SizedBox(height: 10),

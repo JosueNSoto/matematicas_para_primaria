@@ -181,7 +181,7 @@ class _ubiEspacialState extends State<ubiEspacial> {
                                       image: AssetImage(
                                           "assets/img/ciudadCardinal.png"),
                                       height: 200,
-                                    )
+                                    ),
                                   ],
                                 ),
                               ),
