@@ -1,3 +1,4 @@
+import 'package:elgood_de_mate/Eje2/Act2_FigurasCuerposGeometricos/carrusel.dart';
 import 'package:flutter/material.dart';
 import 'package:elgood_de_mate/helpers/margenes.dart';
 import '2.2_rectasParalelasPerpendi.dart';
@@ -66,15 +67,44 @@ class _figurasState extends State<figuras> {
                     ),
                     SizedBox(height: 10),
                     Container(
-                      child: Column(
-                        children: [
-                          Text(
-                            "Texto de descripción",
-                            style: TextStyle(
-                              color: Color.fromRGBO(254, 102, 37, 1),
+                      child: Center(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Icon(
+                              Icons.chevron_left,
                             ),
-                          ),
-                        ],
+                            Text(
+                              "Lados de un cuadrilatero",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            Icon(
+                              Icons.navigate_next,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 5),
+                    DestinationCarousel(),
+                    SizedBox(height: 10),
+                    Center(
+                      child: Text(
+                        'Ángulos rectos',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    SizedBox(height: 5),
+                    InteractiveViewer(
+                      child: Container(
+                        child: Column(
+                          children: [
+                            Image(
+                              image: AssetImage("assets/img/angulos1.png"),
+                              height: 200,
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                     SizedBox(height: 10),
@@ -87,11 +117,36 @@ class _figurasState extends State<figuras> {
                     ),
                     SizedBox(height: 10),
                     Container(
-                      child: Text(
-                        "Imágenes de Ejemplo",
-                        style: TextStyle(
-                          color: Color.fromRGBO(254, 102, 37, 1),
-                        ),
+                      child: Column(
+                        children: [
+                          Center(
+                            child: Text(
+                                "Hay ángulos rectos en muchas partes y en muchas figuras"),
+                          ),
+                          SizedBox(height: 5),
+                          InteractiveViewer(
+                            child: Image(
+                              image: AssetImage("assets/img/EJ1_angulos.png"),
+                              height: 100,
+                            ),
+                          ),
+                          SizedBox(height: 10),
+                          Text("Hay ángulos rectos en la vida real"),
+                          SizedBox(height: 5),
+                          InteractiveViewer(
+                            child: Image(
+                              image: AssetImage("assets/img/EJ2_angulos.png"),
+                              height: 205,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                          InteractiveViewer(
+                            child: Image(
+                              image: AssetImage("assets/img/EJ3_angulos.png"),
+                              height: 250,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(height: 10),
