@@ -20,12 +20,6 @@ class _carruselParalelasState extends State<carruselParalelas> {
     'assets/img/EJ3_paralelas.png',
   ];
 
-  final List<String> places = [
-    'Tienen 4 lados',
-    'Tienen 4 vertices',
-    'Tienen 2 diagonales',
-  ];
-
   List<Widget> generateImageTiles(screenSize) {
     return images
         .map(
@@ -52,25 +46,13 @@ class _carruselParalelasState extends State<carruselParalelas> {
             items: imageSliders,
             options: CarouselOptions(
                 enlargeCenterPage: true,
-                aspectRatio: 1.5,
+                aspectRatio: 2.3,
                 onPageChanged: (index, reason) {
                   setState(() {
                     _current = index;
                   });
                 }),
             carouselController: _controller,
-          ),
-          AspectRatio(
-            aspectRatio: 1.6,
-            child: Center(
-              child: Text(
-                places[_current],
-                style: TextStyle(
-                  decoration: TextDecoration.none,
-                  color: Colors.black,
-                ),
-              ),
-            ),
           ),
         ],
       ),

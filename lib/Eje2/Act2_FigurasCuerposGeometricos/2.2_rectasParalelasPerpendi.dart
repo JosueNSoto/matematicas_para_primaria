@@ -1,6 +1,8 @@
 import 'package:elgood_de_mate/mainMenu.dart';
 import 'package:flutter/material.dart';
 import 'package:elgood_de_mate/helpers/margenes.dart';
+import '2.2.1_paralelas.dart';
+import '2.2.2_perpen.dart';
 
 class rectasParalelasPerpen extends StatefulWidget {
   @override
@@ -108,7 +110,7 @@ class _rectasParalelasPerpenState extends State<rectasParalelasPerpen> {
                             SizedBox(height: 5),
                             Image(
                               image: AssetImage("assets/img/lineaPara.png"),
-                              height: 200,
+                              width: 400,
                             ),
                             SizedBox(height: 10),
                             RichText(
@@ -143,7 +145,7 @@ class _rectasParalelasPerpenState extends State<rectasParalelasPerpen> {
                             SizedBox(height: 5),
                             Image(
                               image: AssetImage("assets/img/lineaPerpen.png"),
-                              height: 200,
+                              width: 400,
                             ),
                           ],
                         ),
@@ -159,11 +161,26 @@ class _rectasParalelasPerpenState extends State<rectasParalelasPerpen> {
                     ),
                     SizedBox(height: 10),
                     Container(
-                      child: Text(
-                        "Imágenes de Ejemplo",
-                        style: TextStyle(
-                          color: Color.fromRGBO(254, 102, 37, 1),
-                        ),
+                      child: Column(
+                        children: [
+                          Container(
+                            child: Center(
+                              child: Column(
+                                children: [
+                                  Text(
+                                      "Las líneas paralelas existen en todos los lados, sin importar a donde mires"),
+                                  SizedBox(height: 5),
+                                  InteractiveViewer(child: carruselParalelas()),
+                                  SizedBox(height: 10),
+                                  Text(
+                                      "Las líneas perpendiculares existen en todos los lados, sin importar a donde mires"),
+                                  SizedBox(height: 5),
+                                  InteractiveViewer(child: carruselPerpen()),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(height: 10),
