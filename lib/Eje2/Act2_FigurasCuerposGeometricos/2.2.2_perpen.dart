@@ -52,25 +52,13 @@ class _carruselPerpenState extends State<carruselPerpen> {
             items: imageSliders,
             options: CarouselOptions(
                 enlargeCenterPage: true,
-                aspectRatio: 1.5,
+                aspectRatio: 2.3,
                 onPageChanged: (index, reason) {
                   setState(() {
                     _current = index;
                   });
                 }),
             carouselController: _controller,
-          ),
-          AspectRatio(
-            aspectRatio: 1.6,
-            child: Center(
-              child: Text(
-                places[_current],
-                style: TextStyle(
-                  decoration: TextDecoration.none,
-                  color: Colors.black,
-                ),
-              ),
-            ),
           ),
         ],
       ),
