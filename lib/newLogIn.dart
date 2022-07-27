@@ -1,10 +1,7 @@
 import 'package:elgood_de_mate/mainMenu.dart';
 import 'package:elgood_de_mate/getLogIn.dart';
-import 'package:sqflite/sqflite.dart';
 import 'signUp.dart';
 import 'package:flutter/material.dart';
-import 'test/test.dart';
-import 'helpers/alerts.dart';
 import 'helpers/margenes.dart';
 import 'signUp.dart';
 import 'contactanos.dart';

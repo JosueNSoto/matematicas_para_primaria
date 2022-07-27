@@ -320,9 +320,9 @@ class _ubiEspacialState extends State<ubiEspacial> {
                                         children: [
                                           Image(
                                             image: AssetImage(
-                                                "assets/img/ciudadCardinalEj1.png"),
+                                                "assets/img/CiudadCardinalEjUno.png"),
                                             height: 200,
-                                          )
+                                          ),
                                         ],
                                       ),
                                     ),
@@ -421,7 +421,7 @@ class _ubiEspacialState extends State<ubiEspacial> {
                                         children: [
                                           Image(
                                             image: AssetImage(
-                                                "assets/img/ciudadCardinalEj2.png"),
+                                                "assets/img/CiudadCardinalEjDos.png"),
                                             height: 200,
                                           )
                                         ],

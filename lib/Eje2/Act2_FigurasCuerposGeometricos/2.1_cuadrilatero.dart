@@ -89,22 +89,24 @@ class _figurasState extends State<figuras> {
                     DestinationCarousel(),
                     SizedBox(height: 10),
                     Center(
-                      child: Text(
-                        'Ángulos rectos',
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                    ),
-                    SizedBox(height: 5),
-                    InteractiveViewer(
-                      child: Container(
-                        child: Column(
-                          children: [
-                            Image(
-                              image: AssetImage("assets/img/angulos1.png"),
-                              height: 200,
+                      child: Column(
+                        children: [
+                          Text(
+                            'Ángulos rectos',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(height: 5),
+                          InteractiveViewer(
+                            child: Column(
+                              children: [
+                                Image(
+                                  image: AssetImage("assets/img/angulos1.png"),
+                                  height: 200,
+                                ),
+                              ],
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(height: 10),
